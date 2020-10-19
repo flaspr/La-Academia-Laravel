@@ -1,6 +1,6 @@
 @media (max-width: 575px) {
-    .body-responsive {
-        padding-bottom: 50px;
+    footer {
+        margin-bottom: 50px;
     }
     .navbar-responsive {
         position: fixed;
@@ -13,7 +13,7 @@
 
 @media (min-width: 576px) {
     .body-responsive {
-        padding-top: 50px;
+        padding-top: 55px;
     }
     .navbar-responsive {
         position: fixed;

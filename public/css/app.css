@@ -16016,14 +16016,6 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
-.display-5 {
-  font-size: 3rem;
-}
-
-.display-6 {
-  font-size: 2.5rem;
-}
-
 .display-7 {
   font-size: 2rem;
 }
@@ -16061,8 +16053,8 @@ body {
 }
 
 @media (max-width: 575px) {
-  .body-responsive {
-    padding-bottom: 50px;
+  footer {
+    margin-bottom: 50px;
   }
 
   .navbar-responsive {
@@ -16076,7 +16068,7 @@ body {
 
 @media (min-width: 576px) {
   .body-responsive {
-    padding-top: 50px;
+    padding-top: 55px;
   }
 
   .navbar-responsive {
@@ -16166,5 +16158,21 @@ body {
   height: 100%;
   z-index: -1;
   background-color: rgba(255, 255, 255, 0.801);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#app {
+  margin-bottom: 90px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
 }
 

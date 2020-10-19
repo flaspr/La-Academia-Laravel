@@ -16,3 +16,17 @@
 */
 
 @import "the-reals-scss/all";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+#app {
+    margin-bottom: 90px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
