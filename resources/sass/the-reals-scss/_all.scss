@@ -1,14 +1,15 @@
 /*
-▄████      █    ██      ▄▄▄▄▄   █ ▄▄  █▄▄▄▄ ▄█ █    █    ██
-█▀   ▀     █    █ █    █     ▀▄ █   █ █  ▄▀ ██ █    █    █ █
-█▀▀        █    █▄▄█ ▄  ▀▀▀▀▄   █▀▀▀  █▀▀▌  ██ █    █    █▄▄█
-█          ███▄ █  █  ▀▄▄▄▄▀    █     █  █  ▐█ ███▄ ███▄ █  █
- █             ▀   █             █      █    ▐     ▀    ▀   █
-  ▀               █               ▀    ▀                   █
-                 ▀                                        ▀
+   ▄▄▄▄▀ ▄  █ ▄███▄       █▄▄▄▄ ▄███▄   ██   █      ▄▄▄▄▄
+▀▀▀ █   █   █ █▀   ▀      █  ▄▀ █▀   ▀  █ █  █     █     ▀▄
+    █   ██▀▀█ ██▄▄        █▀▀▌  ██▄▄    █▄▄█ █   ▄  ▀▀▀▀▄
+   █    █   █ █▄   ▄▀     █  █  █▄   ▄▀ █  █ ███▄ ▀▄▄▄▄▀
+  ▀        █  ▀███▀         █   ▀███▀      █     ▀
+          ▀                ▀              █
+                                         ▀
 */
-@import "f.variables.scss";
-@import "f.bg-gradient.scss";
+
+@import "variables.scss";
+@import "bg-gradient.scss";
 
 /*
 ▄███▄   █     ▄███▄   █▀▄▀█ ▄███▄      ▄     ▄▄▄▄▀ ████▄    ▄▄▄▄▄
@@ -20,10 +21,10 @@
 
 */
 
-@import "f.a.scss";
-@import "f.text.scss";
-@import "f.paddings.scss";
-@import "f.navbar.scss";
+@import "a.scss";
+@import "text.scss";
+@import "paddings.scss";
+@import "navbar.scss";
 
 /*
 ▄███▄     ▄▄▄▄▄      ▄▄▄▄▀ ▄█ █    ████▄    ▄▄▄▄▄
@@ -34,7 +35,7 @@
 
 
 */
-@import "f.icons.scss";
-@import "f.card.scss";
-@import "f.parallax.scss";
-@import "f.scroll.scss";
+@import "icons.scss";
+@import "card.scss";
+@import "parallax.scss";
+@import "scroll.scss";
