@@ -4,7 +4,7 @@
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ asset('storage/images/logo.png') }}" width="" height="35px" alt="">
             <span class="d-none d-sm-inline font-weight-lighter">
-                {{ config('app.name', '') }}
+                {{ config('app.name', 'La Academia') }}
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

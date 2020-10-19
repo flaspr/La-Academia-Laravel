@@ -11,8 +11,6 @@
 
     @include('layouts.card-info-covid')
 
-    <!--TODO: Formulario Para solicitar Matricula-->
-
     @include('layouts.text1',[
     'title'=>
     'Conviértete en un cliente satisfecho'
