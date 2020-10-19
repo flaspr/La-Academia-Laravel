@@ -1,7 +1,6 @@
 <footer class="footer-responsive">
     <div class="bg-oscuro">
 
-        @include('layouts.custom.social')
         <div class="container py-3 text-light">
             <div class="row align-items-center font-weight-bold">
                 <div class="col-12 text-center">Icons made by <a class="text-warning text-decoration-none"

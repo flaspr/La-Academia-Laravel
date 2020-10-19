@@ -21,13 +21,13 @@
 
 <body class="body-responsive">
     <div id="app">
-        @include('layouts.html.navbar')
+        @include('layouts.navbar')
 
         <main class="@yield('class')">
             @yield('content')
         </main>
 
-        @include('layouts.html.footer')
+        @include('layouts.footer')
 
     </div>
 

@@ -1,19 +1,19 @@
-@extends('layouts.html.app')
+@extends('layouts.app')
 
 @section('class','py-0')
 
 
 @section('content')
 
-@include('layouts.custom.header')
+@include('layouts.header')
 
 <div class="">
 
-    @include('layouts.custom.card-info-covid')
+    @include('layouts.card-info-covid')
 
     <!--TODO: Formulario Para solicitar Matricula-->
 
-    @include('layouts.custom.text1',[
+    @include('layouts.text1',[
     'title'=>
     'Conviértete en un cliente satisfecho'
     ,
@@ -27,12 +27,14 @@
     muchos de los cuales nos han dado grandes alabanzas y también nos han recomendado a familiares y
     amigos para su entrenamiento. También puedes convertirte en uno de nuestros clientes satisfechos.'
     ])
-    @include('layouts.custom.pricing')
+    @include('layouts.pricing')
 
 
-    @include('layouts.custom.contact')
+    @include('layouts.contact')
 
-    @include('layouts.custom.map')
+    @include('layouts.map')
+
+    @include('layouts.social')
 
 </div>
 
