@@ -1,0 +1,39 @@
+@import "f.variables.scss";
+// GRADIENTES PRINCIPALES
+
+.bg-claro {
+    background: $claro;
+}
+
+.bg-principal {
+    background: $principal;
+}
+.bg-oscuro {
+    background: $oscuro;
+}
+// OTROS GRADIENTES
+
+.bg-gradient-1 {
+    background-color: #00d2ff;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
+}
+
+.bg-gradient-2 {
+    background: #7f7fd5;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.bg-gradient-3 {
+    background: #654ea3;
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+}
+
+.bg-gradient-4 {
+    background: #ff416c;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.bg-gradient-5 {
+    background: #007991;
+    background: linear-gradient(to right, #007991, #78ffd6);
+}
