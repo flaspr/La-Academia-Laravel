@@ -29,6 +29,7 @@
         </main>
 
 
+        @include('layouts.full-contact')
         @include('layouts.footer')
     </div>
 

@@ -28,12 +28,6 @@
     @include('layouts.pricing')
 
 
-    @include('layouts.contact')
-
-    @include('layouts.map')
-
-    @include('layouts.social')
-
 </div>
 
 @endsection

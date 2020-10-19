@@ -1,4 +1,4 @@
-<footer class="footer-responsive bg-oscuro d-flex align-items-center footer">
+<footer class="footer-responsive bg-principal py-3">
     <div class="container text-light">
         <div class="row align-items-center font-weight-bold">
             <div class="col-12 text-center">Icons made by <a class="text-warning text-decoration-none"

@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-3">
+<div class="container py-5">
 
-    <h1>Solicita tu matrícula</h1>
+    <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
 
 
     <form class="row g-3 was-validated" action="{{route('matricula.send')}}" method="POST">
