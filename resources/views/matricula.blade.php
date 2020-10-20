@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+@if (session('matriculaConfirmado'))
+    @include('confirmacion')
+
+@endif
+
+
+
 <div class="bg-principal text-light">
     <div class="container py-5 ">
 
         <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
 
+      
+       
 
         <form class="row g-3 was-validated" action="{{route('matricula.send')}}" method="POST">
             @csrf

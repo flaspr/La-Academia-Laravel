@@ -12,8 +12,17 @@ class MatriculationController extends Controller
         return view('matricula');
     }
 
-    public function send(Request $request)
+    public function send()
     {
-        return 'Formulario enviado a ' . $request->nombre;
+
+        //Aqui incluiremos un mensaje de sesion
+        $msgs = request() -> validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'subname' => 'required'
+        ]);
+
+
+        return back()->with('matriculaConfirmado','MatriculaConfirmado prueba');
     }
 }
