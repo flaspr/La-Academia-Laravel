@@ -5,14 +5,11 @@
 
 @section('content')
 
-@include('layouts.header')
+@include('layouts.card-info-covid')
+<div class="slider-texto m-0 parallax">
+    @include('layouts.header')
 
-<div class="">
-
-    @include('layouts.card-info-covid')
-
-    @include('layouts.text1',[
-    'title'=>
+    @include(' layouts.text1',[ 'title'=>
     'Conviértete en un cliente satisfecho'
     ,
     'text'
@@ -25,6 +22,12 @@
     muchos de los cuales nos han dado grandes alabanzas y también nos han recomendado a familiares y
     amigos para su entrenamiento. También puedes convertirte en uno de nuestros clientes satisfechos.'
     ])
+</div>
+
+
+<div class="">
+
+
     @include('layouts.pricing')
 
 

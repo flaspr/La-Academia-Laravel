@@ -1,4 +1,4 @@
-<div class="py-5 parallax d-flex flex-column justify-content-center">
+<div class="py-5 d-flex flex-column justify-content-center">
     <div class="container text-left">
 
         <h2 class="display-6 font-weight-bold">

@@ -1,4 +1,4 @@
-<div class="section-text1 parallax">
+<div class="section-text1">
     <div class="py-6">
         <div class="container">
             <h2 class="display-6 font-weight-bold">

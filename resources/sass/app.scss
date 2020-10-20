@@ -15,4 +15,30 @@
 *
 */
 
+@import "slick.scss";
+
 @import "the-reals-scss/all";
+
+@import "slick-theme.css";
+
+.slider-texto {
+    .slick-track {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    * {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slick-dots {
+        background-color: $oscuro;
+    }
+    .slick-dots li button:before {
+        color: white;
+    }
+    .slick-dots li.slick-active button:before {
+        color: $claro;
+    }
+}
