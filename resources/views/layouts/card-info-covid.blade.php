@@ -5,7 +5,7 @@
             <div class="">
                 <h2 class="mb-4 font-weight-bold display-7 zoom-out-card-effect-2">Nos adaptamos a las
                     nuevas
-                    ciscunstancias</h2>
+                    circunstancias</h2>
 
                 <div class="row justify-content-around pt-4 zoom-in-card-effect-2">
 

@@ -1,4 +1,5 @@
-<footer class="footer-responsive bg-principal py-3">
+<footer class="footer-responsive bg-principal">
+    <div class="py-2 bg-oscuro"></div>
     <div class="container text-light">
         <div class="row align-items-center font-weight-bold">
             <div class="col-12 text-center">Icons made by <a class="text-warning text-decoration-none"
