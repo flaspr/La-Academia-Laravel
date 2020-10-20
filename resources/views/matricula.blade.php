@@ -5,7 +5,7 @@
 
     <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
 
-
+    {{--  prueba  --}}
     <form class="row g-3 was-validated" action="{{route('matricula.send')}}" method="POST">
         @csrf
         <div class="col-md-4">
