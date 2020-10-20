@@ -1,12 +1,14 @@
 <div class="section-pricing bg-principal text-light py-4">
-    <div class="container-xl">
-        <div class="row text-center align-items-stretch justify-content-center">
 
+    <div class="slider-pricing">
+
+        <div>
             <!-- Pricing Table-->
-            <div class="col-12  col-md-6 col-lg-4  mb-5 mb-lg-0 card-effect-2">
-                <div class="bg-dark p-5 h-100 zoom-out-card-effect-2 rounded-lg shadow">
 
-                    <h2 class="display-8 text-uppercase font-weight-bold mb-4 mb-5">Primaria</h2>
+            <div class="card bg-dark text-light px-7 mx-5 mb-lg-0 ">
+                <div class="p-5 h-100 rounded-lg">
+
+                    <h2 class="display-8 text-uppercase font-weight-bold mb-4  mb-5">Primaria</h2>
                     <div class="">
                         <h3 class=" font-weight-bold">
                             37,5€<span class="text-small font-weight-normal ml-2">/mes por asignatura
@@ -33,13 +35,14 @@
                 </div>
             </div>
             <!-- END -->
+        </div>
 
+        <div>
             <!-- Pricing Table-->
+            <div class="card bg-dark text-light  px-7 mx-5 mb-lg-0 ">
+                <div class="p-5 h-100 rounded-lg">
 
-            <div class="col-12 col-md-6 col-lg-4  mb-5 mb-lg-0 card-effect-2">
-                <div class="bg-dark p-5 h-100 zoom-out-card-effect-2 rounded-lg shadow">
-
-                    <h2 class="display-8 text-uppercase font-weight-bold mb-4 ">ESO</h2>
+                    <h2 class="display-8 text-uppercase font-weight-bold mb-4  mb-5">ESO</h2>
                     <div class="">
                         <h3 class=" font-weight-bold">
                             37,5€<span class="text-small font-weight-normal ml-2">/mes por asignatura
@@ -71,10 +74,12 @@
                 </div>
             </div>
             <!-- END -->
+        </div>
 
+        <div>
             <!-- Pricing Table-->
-            <div class="col-12 col-md-6 col-lg-4  mb-5 mb-lg-0 card-effect-2">
-                <div class="bg-dark p-5 h-100 zoom-out-card-effect-2 rounded-lg shadow">
+            <div class="card bg-dark text-light px-7 mx-5 mb-lg-0 ">
+                <div class="p-5 h-100 rounded-lg">
 
                     <h2 class="display-8 text-uppercase font-weight-bold mb-4  mb-5">Bachillerato
                     </h2>
@@ -111,12 +116,9 @@
                     </div>
                 </div>
             </div>
-
-            <!-- END -->
-
-
         </div>
+        <!-- END -->
+
 
     </div>
-
 </div>

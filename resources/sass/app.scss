@@ -21,16 +21,11 @@
 
 @import "slick-theme.css";
 
-.slider-texto {
+.slider-header {
     .slick-track {
         position: relative;
         display: flex;
         align-items: center;
-    }
-    * {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .slick-dots {
         background-color: $oscuro;

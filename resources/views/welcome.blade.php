@@ -6,7 +6,8 @@
 @section('content')
 
 @include('layouts.card-info-covid')
-<div class="slider-texto m-0 parallax">
+
+<div class="slider-header mb-4 parallax">
     @include('layouts.header')
 
     @include(' layouts.text1',[ 'title'=>
@@ -24,13 +25,8 @@
     ])
 </div>
 
-
-<div class="">
-
-
-    @include('layouts.pricing')
+@include('layouts.pricing')
 
 
-</div>
 
 @endsection
