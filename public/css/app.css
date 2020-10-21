@@ -4621,7 +4621,7 @@ readers do not read off random characters that represent icons */
     font-style: normal;
 
     src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475);
-    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?f97e3bbf73254b0112091d0192f17aec#slick) format('svg');
+    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?526d7fdf63614222d376257221e8b754#slick) format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -16464,8 +16464,8 @@ body {
 }
 
 .botonAnimado {
-  -webkit-animation-name: destello;
-          animation-name: destello;
+  -webkit-animation-name: destelloooo;
+          animation-name: destelloooo;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-duration: 4s;
@@ -16474,7 +16474,7 @@ body {
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes destello {
+@-webkit-keyframes destelloooo {
   0% {
     width: 300px;
   }
@@ -16488,7 +16488,7 @@ body {
   }
 }
 
-@keyframes destello {
+@keyframes destelloooo {
   0% {
     width: 300px;
   }
@@ -16520,3 +16520,29 @@ body {
   color: #b488ff;
 }
 
+
+/* copiarASCSS */
+
+.destello{
+  animation-name: destelloooo1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes destelloooo1 {
+  0% {
+    
+    background-color:#198754; 
+      
+  }
+
+  50%{
+    background-color: #33ffa0;
+  }
+
+  100% {
+     background-color:#198754; 
+  }
+}

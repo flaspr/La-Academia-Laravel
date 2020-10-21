@@ -7,8 +7,8 @@
 @endif
 
 
-<div class="bg-principal text-light">
-    <div class="container py-5 ">
+<div class="bg-principal py-5 text-light">
+    <div class="container my-5 px-3 border">
 
         <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
         <form class="row g-3 was-validated mt-3" action="{{route('matricula.send')}}" method="POST">
@@ -59,7 +59,7 @@
             </div>
 
             <div class="col-12">
-                <button class="btn btn-success botonAnimado" type="submit">Enviar</button>
+                <button class="btn btn-success destello" type="submit">Enviar</button>
             </div>
         </form>
 
