@@ -16429,7 +16429,7 @@ body {
 }
 
 .card-effect-2 * {
-  transition: all 0.3s;
+  transition: transform 0.3s;
 }
 
 .card-effect-2:hover .zoom-out-card-effect-2 {
@@ -16461,6 +16461,45 @@ body {
   height: 100%;
   z-index: -1;
   background-color: rgba(255, 255, 255, 0.801);
+}
+
+.botonAnimado {
+  -webkit-animation-name: destello;
+          animation-name: destello;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes destello {
+  0% {
+    width: 300px;
+  }
+
+  50% {
+    width: 500px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes destello {
+  0% {
+    width: 300px;
+  }
+
+  50% {
+    width: 500px;
+  }
+
+  100% {
+    width: 300px;
+  }
 }
 
 .slider-header .slick-track {

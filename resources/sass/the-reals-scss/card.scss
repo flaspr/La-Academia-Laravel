@@ -32,7 +32,7 @@
 
 .card-effect-2 {
     * {
-        transition: all 0.3s;
+        transition: transform 0.3s;
     }
     &:hover {
         .zoom-out-card-effect-2 {

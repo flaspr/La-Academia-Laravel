@@ -2,11 +2,10 @@
 
 @section('content')
 @if (session('matriculaConfirmado'))
-    @include('confirmacion' )
+@include('confirmacion' )
 
 @endif
 
-<link rel="stylesheet" href="{{asset('css/matricula.css') }}">
 
 <div class="bg-principal text-light">
     <div class="container py-5 ">
@@ -23,7 +22,7 @@
                     <label for="validationCustom01" class="form-label">Apellidos</label>
                     <input type="text" name="subname" class="form-control" id="validationCustom01" required>
                 </div>
-    
+
                 <div class="px-0 col-12 col-md-12 mb-2">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="email" name="email" class="form-control" id="email" required>
@@ -34,24 +33,24 @@
                 <div class="col-12 text-center">
                     <h3>Asignaturas</h3>
                 </div>
-                    <div class="col-6 col-md-4">
-                      <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
-                    <div class="col-6  col-md-4">
-                        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
-                    <div class="col-6  col-md-4">
-                        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
-                    <div class="col-6  col-md-4">
-                        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
-                    <div class="col-6  col-md-4">
-                        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
-                    <div class="col-6  col-md-4">
-                        <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>  
-                    </div>
+                <div class="col-6 col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
+                <div class="col-6  col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
+                <div class="col-6  col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
+                <div class="col-6  col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
+                <div class="col-6  col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
+                <div class="col-6  col-md-4">
+                    <input type="checkbox" name="cb-deportes" value="gusta"> Deportes</input>
+                </div>
             </div>
 
             <div class="px-0 col-md-12">

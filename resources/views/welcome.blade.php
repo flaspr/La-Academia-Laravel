@@ -5,7 +5,6 @@
 
 @section('content')
 
-@include('layouts.card-info-covid')
 
 <div class="slider-header mb-4 parallax">
     @include('layouts.header')
@@ -25,7 +24,12 @@
     ])
 </div>
 
+
+
 @include('layouts.pricing')
+
+
+@include('layouts.card-info-covid')
 
 
 

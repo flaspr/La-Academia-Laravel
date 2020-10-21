@@ -1,0 +1,19 @@
+.botonAnimado {
+    animation-name: destello;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes destello {
+    0% {
+        width: 300px;
+    }
+    50% {
+        width: 500px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
