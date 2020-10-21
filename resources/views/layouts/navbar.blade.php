@@ -27,6 +27,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contacto') }}">
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="moodle">
                         <i class="fas fa-graduation-cap fa-2x"></i></a>
                 </li>

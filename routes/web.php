@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MatriculationController;
+use App\Http\Controllers\ContactoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/matriculacion', [MatriculationController::class, 'index'])->name('matricula');
 Route::post('/matriculacion', [MatriculationController::class, 'send'])->name('matricula.send');
+Route::get('/contacto', [ContactoController::class, 'index'])->name('contacto');
