@@ -2,7 +2,7 @@
 
 @section('content')
 @if (session('matriculaConfirmado'))
-    @include('confirmacion')
+    @include('confirmacion' )
 
 @endif
 
