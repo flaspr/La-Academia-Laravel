@@ -6,16 +6,12 @@
 
 @endif
 
-
+<link rel="stylesheet" href="{{asset('css/matricula.css') }}">
 
 <div class="bg-principal text-light">
     <div class="container py-5 ">
 
         <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
-
-      
-       
-
         <form class="row g-3 was-validated mt-3" action="{{route('matricula.send')}}" method="POST">
             @csrf
             <div class="col-md-5 row ">
@@ -64,7 +60,7 @@
             </div>
 
             <div class="col-12">
-                <button class="btn btn-success" type="submit">Enviar</button>
+                <button class="btn btn-success botonAnimado" type="submit">Enviar</button>
             </div>
         </form>
 
