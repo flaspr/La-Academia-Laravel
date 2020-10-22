@@ -19,9 +19,10 @@
 
 @import "matricula.scss";
 
-@import "slick.scss";
 
-@import "slick-theme.css";
+// Slider
+@import "slick-slider/slick.scss";
+@import "slick-slider/slick-theme.css";
 
 .slider-header {
     .slick-track {
