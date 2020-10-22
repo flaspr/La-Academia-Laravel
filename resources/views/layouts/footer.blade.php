@@ -1,5 +1,6 @@
-<footer class="footer-responsive bg-principal">
-    <div class="py-2 bg-oscuro"></div>
+<footer class=" {{ $bg ?? "bg-dark" }}{{ $text ?? "navbar-dark" }}
+    footer-responsive">
+    <div class="py-2 {{ $bg2 ?? "bg-principal" }}"></div>
     <div class="container text-light py-3">
         <div class="row align-items-center font-weight-bold">
             <div class="col-12 text-center">Icons made by <a class="text-warning text-decoration-none"

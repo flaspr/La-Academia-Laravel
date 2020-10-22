@@ -1,3 +1,2 @@
-@include('layouts.contact')
-@include('layouts.social')
+@include('layouts.contact-social')
 @include('layouts.map')

@@ -23,6 +23,7 @@
 
 <body class="body-responsive">
     <div id="app">
+
         @include('layouts.navbar')
 
         <main class="@yield('class')">
@@ -31,6 +32,7 @@
 
 
         @include('layouts.full-contact')
+
         @include('layouts.footer')
     </div>
 

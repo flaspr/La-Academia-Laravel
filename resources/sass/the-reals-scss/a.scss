@@ -1,47 +1,48 @@
 @import "variables.scss";
+
 a.social-link {
     overflow: hidden;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+
     i {
         transition: transform 1s ease-in-out;
     }
+
     &:hover,
     &:focus {
         i {
             transform: rotateY(3.142rad * 2) scale(2);
         }
-        color: #ebcdff !important;
-        background-color: black !important;
+
     }
 
     &.social-maps {
-        color: #f8f9fa !important;
         background-color: #dc3545 !important;
     }
+
     &.social-email {
-        color: #f8f9fa !important;
         background-color: #17a2b8 !important;
     }
+
     &.social-phone {
-        color: #f8f9fa !important;
         background-color: #009688 !important;
     }
+
     &.social-whatsapp {
-        color: #f8f9fa !important;
         background-color: #25d366 !important;
     }
+
     &.social-facebook {
-        color: #f8f9fa !important;
         background-color: #3b5998 !important;
     }
+
     &.social-twitter {
-        color: #00aced !important;
-        background-color: transparent !important;
+        background-color: #00aced !important;
     }
+
     &.social-youtube {
-        color: #cd201f !important;
-        background-color: transparent !important;
+        background-color: #cd201f !important;
     }
 }
 
@@ -78,6 +79,7 @@ a.social-link {
         transition: all 0.5s ease-in-out;
         transition-delay: 0s;
         transform: scale(0);
+
         * {
             padding: 0px;
             margin: 0px;
@@ -91,6 +93,7 @@ a.social-link {
             transition-delay: 0.5s;
             transform: scale(1);
         }
+
         .effect-box {
             height: 100%;
             transition-delay: 0.3s;
@@ -131,6 +134,7 @@ a.social-link {
         transition: all 0.5s ease-in-out;
         transition-delay: 0s;
         transform: scale(0);
+
         * {
             padding: 0px;
             margin: 0px;
@@ -144,6 +148,7 @@ a.social-link {
             transition-delay: 0.5s;
             transform: scale(1);
         }
+
         .effect-box {
             height: 100%;
             transition-delay: 0.3s;

@@ -1,5 +1,5 @@
-<nav
-    class="navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-dark  navbar-expand-sm bg-principal  shadow-lg py-1">
+<nav class="{{ $bg ?? "bg-dark" }} {{ $navbar ?? "navbar-dark" }}
+    navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-expand-sm shadow-lg py-1">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ asset('storage/images/logo.png') }}" width="" height="35px" alt="">
