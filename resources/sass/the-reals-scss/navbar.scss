@@ -1,7 +1,26 @@
+#navbar {
+    transition: padding 1s ease;
+}
+
+#logo {
+    transition: height 1s ease;
+}
+
 @media (max-width: 575px) {
+    #logo {
+
+        &.logo-pequeño,
+        &.logo-grande {
+            height: 35px;
+        }
+
+
+    }
+
     footer {
         margin-bottom: 50px;
     }
+
     .navbar-responsive {
         position: fixed;
         bottom: 0;
@@ -12,9 +31,22 @@
 }
 
 @media (min-width: 576px) {
-    .body-responsive {
-        padding-top: 55px;
+    #logo {
+        &.logo-pequeño {
+            height: 35px;
+        }
+
+        &.logo-grande {
+            height: 75px;
+        }
     }
+
+    .body-responsive {
+        main> :first-child {
+            padding-top: 120px !important;
+        }
+    }
+
     .navbar-responsive {
         position: fixed;
         top: 0;
