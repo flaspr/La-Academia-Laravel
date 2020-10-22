@@ -2,9 +2,9 @@
     <div class="container-xl">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-4">
-                <div class="text-center ">
+                <div class="text-center text-dark">
                     <div>
-                        <i class="fas fa-book text-light fa-3x"></i>
+                        <i class="fas fa-book text-dark fa-3x"></i>
                     </div>
                     <p class="display-7 my-3">
                         NUESTRAS
@@ -106,9 +106,9 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-8">
-                <div class="text-center ">
+                <div class="text-center text-dark">
                     <div>
-                        <i class="fas fa-euro-sign text-light fa-3x"></i>
+                        <i class="fas fa-euro-sign text-dark fa-3x"></i>
                     </div>
                     <p class="display-7 my-3">
                         NUESTROS

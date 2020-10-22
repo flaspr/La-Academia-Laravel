@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-12 col-md-6 order-0 order-md-3">
 
-                <a class="btn bg-principal btn-block text-light my-2 display-8" data-toggle="collapse" href="#horario1"
+                <a class="btn bg-claro btn-block text-dark my-2 display-8" data-toggle="collapse" href="#horario1"
                     role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Octubre a
                     Junio</a>
 
@@ -20,7 +20,7 @@
             <div class="col-12 col-md-6 order-2 order-md-3">
                 <div>
 
-                    <a class="btn bg-principal btn-block text-light my-2 display-8 position-relative"
+                    <a class="btn bg-claro btn-block text-dark my-2 display-8 position-relative"
                         data-toggle="collapse" href="#horario2" role="button" aria-expanded="false"
                         aria-controls="multiCollapseExample1">Julio y
                         Agosto </a>
