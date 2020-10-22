@@ -1,5 +1,5 @@
 <div class="section-cardinfo bg-principal text-light py-5">
-    <div class="container text-center overflow-hidden">
+    <div class="container text-center">
         <div>
             <i class="fas fa-hand-sparkles fa-3x"></i>
         </div>
