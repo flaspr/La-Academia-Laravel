@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-@if (session('matriculaConfirmado'))
-@include('confirmacion' )
+@if(session('matriculaConfirmado'))
+    @include('confirmacion' )
 
 @endif
 
@@ -11,7 +11,7 @@
     <div class="container my-5 px-3 border">
 
         <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
-        <form class="row g-3 was-validated mt-3" action="{{route('matricula.send')}}" method="POST">
+        <form class="row g-3 was-validated mt-3" action="{{ route('matricula.send') }}" method="POST">
             @csrf
             <div class="col-md-5 row ">
                 <div class="px-0 pr-2 col-12 col-md-6 mb-2">

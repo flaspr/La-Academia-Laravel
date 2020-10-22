@@ -1,16 +1,54 @@
+@import "variables.scss";
+
+
+.text-claro {
+    color: $claro;
+}
+
+.text-principal {
+    color: $principal;
+}
+
+.text-oscuro {
+    color: $oscuro;
+}
+
+.text-secundario-claro {
+    color: $secundario-claro;
+}
+
+.text-secundario {
+    color: $secundario;
+}
+
+.text-secundario-oscuro {
+    color: $secundario-oscuro;
+}
+
 body {
     font-family: "Epilogue", sans-serif;
 }
 
-//.display-5 {
-//    font-size: 3rem;
-//}
-//.display-6 {
-//    font-size: 2.5rem;
-//}
 .display-7 {
-    font-size: 2rem;
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: 300;
+    line-height: 1.2;
 }
-.display-7 {
-    font-size: 1.5rem;
+
+@media (min-width: 1200px) {
+    .display-7 {
+        font-size: 2rem;
+    }
+}
+
+.display-8 {
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+    .display-8 {
+        font-size: 1.5rem;
+    }
 }
