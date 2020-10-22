@@ -1,4 +1,4 @@
-<footer class=" {{ $bg ?? "bg-dark" }}{{ $text ?? "navbar-dark" }}
+<footer class=" {{ $bg ?? "bg-dark" }} {{ $text ?? "text-light" }}
     footer-responsive">
     <div class="py-2 {{ $bg2 ?? "bg-principal" }}"></div>
     <div class="container text-light py-3">
