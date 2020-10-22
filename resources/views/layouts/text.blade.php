@@ -1,15 +1,19 @@
-<div class="section-text1">
+<div class="section-text">
     <div class="py-6">
         <div class="container">
+            @isset ($article)
             <h2 class="display-6 font-weight-bold">
-                {{ $title }}
+                {{ $article['title'] }}
             </h2>
             <h2 class="display-7">
-                {{ $text }}
+                {{ $article['body'] }}
             </h2>
+            @isset ($article['optional'])
             <h2 class="display-7 d-none d-lg-inline">
-                {{ $text2 }}
+                {{ $article['optional'] }}
             </h2>
+            @endisset
+            @endisset
         </div>
     </div>
 
