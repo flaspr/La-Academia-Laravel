@@ -15,11 +15,11 @@
 *
 */
 
-@import "slick.scss";
-
 @import "the-reals-scss/all";
 
 @import "matricula.scss";
+
+@import "slick.scss";
 
 @import "slick-theme.css";
 
@@ -29,12 +29,15 @@
         display: flex;
         align-items: center;
     }
+
     .slick-dots {
         background-color: $oscuro;
     }
+
     .slick-dots li button:before {
         color: white;
     }
+
     .slick-dots li.slick-active button:before {
         color: $claro;
     }
