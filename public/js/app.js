@@ -37896,30 +37896,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./slick */ "./resources/js/slick.js");
 
-$(".slider-header").slick({
-  lazyLoad: "ondemand",
-  dots: true,
-  infinite: true,
-  speed: 1000,
-  autoplaySpeed: 10000,
-  arrows: false,
-  fade: true,
-  cssEase: "linear",
-  autoplay: true,
-  centerMode: true,
-  slidesToShow: 1,
-  pauseOnFocus: false,
-  pauseOnHover: false,
-  responsive: [{
-    breakpoint: 480,
-    settings: {
-      arrows: false,
-      centerMode: true,
-      centerPadding: "40px",
-      slidesToShow: 1
-    }
-  }]
-});
+__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+__webpack_require__(/*! ./shrink */ "./resources/js/shrink.js");
+
+__webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
 /***/ }),
 
@@ -37959,6 +37940,42 @@ window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/shrink.js":
+/*!********************************!*\
+  !*** ./resources/js/shrink.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+$(window).resize(scrollFunction);
+
+function scrollFunction() {
+  if (document.body.clientWidth >= 576) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").classList.remove("py-3");
+      document.getElementById("logo").classList.remove("logo-grande");
+      document.getElementById("navbar").classList.add("py-1");
+      document.getElementById("logo").classList.add("logo-pequeño");
+    } else {
+      document.getElementById("navbar").classList.remove("py-1");
+      document.getElementById("logo").classList.remove("logo-pequeño");
+      document.getElementById("navbar").classList.add("py-3");
+      document.getElementById("logo").classList.add("logo-grande");
+    }
+  } else {
+    document.getElementById("navbar").classList.remove("py-3");
+    document.getElementById("navbar").classList.add("py-1");
+    document.getElementById("logo").classList.remove("logo-grande");
+    document.getElementById("logo").classList.add("logo-pequeño");
+  }
+}
 
 /***/ }),
 
@@ -40654,6 +40671,40 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./resources/js/slider.js":
+/*!********************************!*\
+  !*** ./resources/js/slider.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(".slider-header").slick({
+  lazyLoad: "ondemand",
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  autoplaySpeed: 10000,
+  arrows: false,
+  fade: true,
+  cssEase: "linear",
+  autoplay: true,
+  centerMode: true,
+  slidesToShow: 1,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  responsive: [{
+    breakpoint: 480,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: "40px",
+      slidesToShow: 1
+    }
+  }]
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -40672,8 +40723,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\LARAVEL\La Academia Laravel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\LARAVEL\La Academia Laravel\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\La-Academia-Laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\La-Academia-Laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

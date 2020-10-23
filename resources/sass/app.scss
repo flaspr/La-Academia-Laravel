@@ -15,13 +15,14 @@
 *
 */
 
-@import "slick.scss";
-
 @import "the-reals-scss/all";
 
 @import "matricula.scss";
 
-@import "slick-theme.css";
+
+// Slider
+@import "slick-slider/slick.scss";
+@import "slick-slider/slick-theme.css";
 
 .slider-header {
     .slick-track {
@@ -29,12 +30,15 @@
         display: flex;
         align-items: center;
     }
+
     .slick-dots {
         background-color: $oscuro;
     }
+
     .slick-dots li button:before {
         color: white;
     }
+
     .slick-dots li.slick-active button:before {
         color: $claro;
     }
