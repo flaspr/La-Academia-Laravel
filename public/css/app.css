@@ -4621,7 +4621,7 @@ readers do not read off random characters that represent icons */
     font-style: normal;
 
     src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475);
-    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?f97e3bbf73254b0112091d0192f17aec#slick) format('svg');
+    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?526d7fdf63614222d376257221e8b754#slick) format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -16004,11 +16004,11 @@ fieldset:disabled .btn {
 */
 
 .bg-claro {
-  background: #b488ff;
+  background: #E0B0FF;
 }
 
 .bg-principal {
-  background: #7340e4;
+  background: #ffffff;
 }
 
 .bg-oscuro {
@@ -16214,11 +16214,11 @@ a.social-link.social-youtube {
 }
 
 .text-claro {
-  color: #b488ff;
+  color: #E0B0FF;
 }
 
 .text-principal {
-  color: #7340e4;
+  color: #ffffff;
 }
 
 .text-oscuro {
@@ -16577,6 +16577,6 @@ body {
 }
 
 .slider-header .slick-dots li.slick-active button:before {
-  color: #b488ff;
+  color: #E0B0FF;
 }
 

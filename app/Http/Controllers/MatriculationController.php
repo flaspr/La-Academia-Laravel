@@ -9,7 +9,7 @@ class MatriculationController extends Controller
     //
     public function index()
     {
-        return view('matricula');
+        return view('matricula2');
     }
 
     public function send()
