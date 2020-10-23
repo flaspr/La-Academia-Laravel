@@ -1,27 +1,113 @@
+/*Elementos lista*/
+li{
+    list-style-type: none;
+}
+
+.checkbox-Dani{
+    cursor: pointer;
+
+}
+
+.checkeado{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.checkeado::before{
+    max-width: 100%;
+    content: "";
+    height: 1px;
+    bottom: 8px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(224,176,255,1) 0%, rgba(25,8,140,1) 100%);
+    box-shadow: 2px 2px 4px black; 
+    width:0%;
+    transition: 0.5s ease width;
+    left:0;
+}
+input:checked ~.checkeado::before{
+    width: 100%;
+}
 
 
+
+/*!Elementos lista*/
+.subrayado{
+    position: relative;
+    display: block;
+    width: 100%;;
+}
+
+.subrayado::before{
+    max-width: 100%;
+    content: "";
+    height: 1px;
+    bottom: 8px;
+    position: absolute;
+    /*Meter color*/
+    /*background linear gradient??*/
+    background: linear-gradient(90deg, rgba(224,176,255,1) 0%, rgba(25,8,140,1) 100%);
+
+    box-shadow: 2px 2px 4px black; 
+    animation-name: ensanchar;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.11,.35,.7,.99);
+    width: 700px;
+    left:0;
+}
+
+
+@keyframes ensanchar{
+    0%{
+        width: 0%;
+    }
+
+  
+    100%{
+        
+        width: 700px;
+    }
+}
+
+
+
+.pad{
+    
+    text-align: center;
+}
+.nopadding{
+    padding:0;
+    margin:0;
+}
 .barra{
     position:relative;
     display:block;
     width:100%;
 }
 
-.barra::before{
+.barra::before, div .form-Dani:placeholder-shown~.barra::before{
+    box-shadow: 2px 2px 4px black;  
     content: "";
-    height: 2px;
+    height: 1px;
     width: 0%;
     bottom: 0;
     position: absolute;
     /*Meter color*/
     /*background linear gradient??*/
-    background: linear-gradient(90deg, rgba(224,176,255,1) 0%, rgba(230,193,254,1) 40%, rgba(25,8,140,1) 100%);
+    background: linear-gradient(90deg, rgba(224,176,255,1) 0%,  rgba(25,8,140,1) 100%);
 
     transition: 0.5s ease width;
     left :0;
 }
 
-input:focus~.barra::before{
+
+
+.ens,div .form-Dani:focus~.barra::before, div .form-Dani~.barra::before{
     width:100%;
+}
+
+.ens>.form-Dani#mensaje:focus~.barra::before, div .form-Dani#mensaje~.barra::before{
+    height: 2px;
 }
 
 .sombra{
@@ -32,7 +118,7 @@ input:focus~.barra::before{
     
 }
 
-div input{
+div .form-Dani{
     background-color: transparent;
     border: none;
     display:block;
@@ -48,25 +134,25 @@ div input{
 }
 
 
- div input:placeholder-shown~label{
+ div .form-Dani:placeholder-shown~.form-label{
     transition: 0.5s ease-in all; 
-    color:black;  
+    color:rgb(94, 92, 92);  
     position: absolute;
     top: 0px;
     left: 1px;
     font-size: 16px;;
 }
 
- div textarea{
+ .form-Dani#mensaje{
     border: none;
     display:block;
     border:1px solid rgb(94, 92, 92);
-    border-bottom: 3px solid rgb(94, 92, 92);
+    border-bottom: 1px solid rgb(94, 92, 92);
     resize: none;
     background-color: transparent;
 } 
 
-div input:focus~label , div label{
+ div .form-Dani:focus~.form-label , div .form-label{
    /*Rellenar*/
     font-size: 12px;;
     transition: 0.5s ease-in all; 
@@ -77,13 +163,14 @@ div input:focus~label , div label{
 }
 
 
-div input:focus, div textarea:focus{
+div .form-Dani:focus, div textarea:focus{
     outline:none;
     color:#5d5e5e;
 }
 
 .containerRelative{
     position: relative;
+    padding: 0;
 }
 
 
