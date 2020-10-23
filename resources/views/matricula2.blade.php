@@ -5,27 +5,31 @@
     @include('confirmacion' )
 
 @endif
+<link rel="stylesheet" href="css/matricula.css">
 
-<div class="bg-principal py-5 text-light">
+<div class="bg-principal my-3 py-5 text-light">
     
-    <div class="container my-5 px-3 border">
+    <div class="container my-0 my-sm-5 p-4 sombra rounded-lg text-dark ajustar">
 
-        <h1 class="display-6 font-weight-bold">Solicita tu matrícula</h1>
+        <h1 class="pb-2 display-6 font-weight-bold">Solicita tu matrícula</h1>
         <form class="row g-3 was-validated mt-3" action="{{ route('matricula.send') }}" method="POST">
             @csrf
             <div class="col-md-5 row ">
-                <div class="px-0 pr-2 col-12 col-md-6 mb-2">
+                <div class="containerRelative px-0  col-12 col-md-12 my-4">
+                    <input placeholder=" " type="text" name="name" class="form-Dani" id="validationCustom01" required>
+                    <span class="barra  "></span>
                     <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" name="name" class="form-control" id="validationCustom01" required>
                 </div>
-                <div class="px-0 col-12 col-md-6 mb-2">
+                <div class=" containerRelative px-0 col-12 col-md-12 my-4">
+                    <input placeholder=" " type="text" name="subname" class="form-Dani" id="validationCustom01" required>
+                    <span class="barra "></span>
                     <label for="validationCustom01" class="form-label">Apellidos</label>
-                    <input type="text" name="subname" class="form-control" id="validationCustom01" required>
                 </div>
 
-                <div class="px-0 col-12 col-md-12 mb-2">
+                <div class="containerRelative px-0 col-12 col-md-12 my-4">
+                    <input placeholder=" " type="email" name="email" class="form-Dani" id="email" required>
+                    <span class="barra "></span>
                     <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email" required>
                 </div>
 
             </div>
@@ -53,9 +57,10 @@
                 </div>
             </div>
 
-            <div class="px-0 col-md-12">
+            <div class="px-0 col-md-12 containerRelative">
+                <textarea class="form-Dani col-10" placeholder=" "  id="validationTextarea" rows="4"required></textarea>
+                <span class="barra "></span>
                 <label for="validationTextarea" class="form-label">Mensaje</label>
-                <textarea class="form-control " id="validationTextarea" required></textarea>
             </div>
 
             <div class="col-12">
