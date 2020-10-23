@@ -1,8 +1,9 @@
 <nav id="navbar" class="{{ $bg ?? "bg-dark" }} {{ $navbar ?? "navbar-dark" }}
     navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-expand-sm shadow-lg py-3">
     <div class="container">
+
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img id="logo" class="logo-grande" src="{{ asset('storage/images/logo.png') }}" alt="">
+            <img id="logo" class="logo-grande" src="{{ asset('images/logo.png') }}" alt="">
             <span class="d-none d-sm-inline font-weight-lighter">
                 {{ config('app.name', 'La Academia') }}
             </span>
@@ -20,15 +21,9 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto align-items-center">
-                <!-- Authentication Links -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('matricula') }}">
                         Solicitar Matrícula
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contacto') }}">
-                        Contacto
                     </a>
                 </li>
                 <li class="nav-item">

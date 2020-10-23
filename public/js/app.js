@@ -37902,6 +37902,8 @@ __webpack_require__(/*! ./shrink */ "./resources/js/shrink.js");
 
 __webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
+$("#modalConf").modal("toggle");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -40723,8 +40725,8 @@ $(".slider-header").slick({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\La-Academia-Laravel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\La-Academia-Laravel\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\LARAVEL\La Academia Laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\LARAVEL\La Academia Laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
