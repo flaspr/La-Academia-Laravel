@@ -6,7 +6,6 @@
 
 @endif
 
-
 <div class="bg-principal py-5 text-light">
     
     <div class="container my-5 px-3 border">
