@@ -23,6 +23,7 @@ aria-hidden="true">
                         <span class="barra  "></span>
                         <label for="validationCustom01" class="form-label">Nombre</label>
                     </div>
+                    
                     <div class=" containerRelative px-0 col-12 col-md-12 my-4">
                         <input placeholder=" " type="text" name="subname" class="form-Dani" id="validationCustom01" required>
                         <span class="barra "></span>
@@ -36,8 +37,6 @@ aria-hidden="true">
                     </div>
         
                 </div>
-                
-                
         
                 <div class="pr-3 col-md-12 containerRelative">
                     <textarea class="form-Dani col-12" placeholder=" "  id="mensaje" rows="4"required></textarea>

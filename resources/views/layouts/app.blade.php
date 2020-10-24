@@ -32,7 +32,7 @@
 
 
         @include('layouts.full-contact')
-
+        @include('contacto')
         @include('layouts.footer')
     </div>
 
