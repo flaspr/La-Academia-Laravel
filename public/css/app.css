@@ -4621,7 +4621,7 @@ readers do not read off random characters that represent icons */
     font-style: normal;
 
     src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475);
-    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?f97e3bbf73254b0112091d0192f17aec#slick) format('svg');
+    src: url(/fonts/slick.eot?ced611daf7709cc778da928fec876475?#iefix) format('embedded-opentype'), url(/fonts/slick.woff?b7c9e1e479de3b53f1e4e30ebac2403a) format('woff'), url(/fonts/slick.ttf?d41f55a78e6f49a5512878df1737e58a) format('truetype'), url(/fonts/slick.svg?526d7fdf63614222d376257221e8b754#slick) format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -16422,42 +16422,238 @@ body {
   background-color: rgba(255, 255, 255, 0.801);
 }
 
-.botonAnimado {
-  -webkit-animation-name: destelloooo;
-          animation-name: destelloooo;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+/*Elementos lista*/
+
+li {
+  list-style-type: none;
 }
 
-@-webkit-keyframes destelloooo {
-  0% {
-    width: 300px;
-  }
+.checkbox-Dani {
+  cursor: pointer;
+}
 
-  50% {
-    width: 500px;
+.checkeado {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.checkeado::before {
+  max-width: 100%;
+  content: "";
+  height: 1px;
+  bottom: 8px;
+  position: absolute;
+  background: linear-gradient(90deg, #e0b0ff 0%, #19088c 100%);
+  box-shadow: 2px 2px 4px black;
+  width: 0%;
+  transition: 0.5s ease width;
+  left: 0;
+}
+
+input:checked ~ .checkeado::before {
+  width: 100%;
+}
+
+/*!Elementos lista*/
+
+.subrayado {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.subrayado::before {
+  max-width: 100%;
+  content: "";
+  height: 1px;
+  bottom: 8px;
+  position: absolute;
+  /*Meter color*/
+  /*background linear gradient??*/
+  background: linear-gradient(90deg, #e0b0ff 0%, #19088c 100%);
+  box-shadow: 2px 2px 4px black;
+  -webkit-animation-name: ensanchar;
+          animation-name: ensanchar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.11, 0.35, 0.7, 0.99);
+          animation-timing-function: cubic-bezier(0.11, 0.35, 0.7, 0.99);
+  width: 700px;
+  left: 0;
+}
+
+@-webkit-keyframes ensanchar {
+  0% {
+    width: 0%;
   }
 
   100% {
-    width: 300px;
+    width: 700px;
   }
 }
 
-@keyframes destelloooo {
+@keyframes ensanchar {
   0% {
-    width: 300px;
-  }
-
-  50% {
-    width: 500px;
+    width: 0%;
   }
 
   100% {
-    width: 300px;
+    width: 700px;
+  }
+}
+
+.pad {
+  text-align: center;
+}
+
+.nopadding {
+  padding: 0;
+  margin: 0;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+div .form-Dani:-moz-placeholder-shown ~ .barra::before {
+  box-shadow: 2px 2px 4px black;
+  content: "";
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  /*Meter color*/
+  /*background linear gradient??*/
+  background: linear-gradient(90deg, #e0b0ff 0%, #19088c 100%);
+  -moz-transition: 0.5s ease width;
+  transition: 0.5s ease width;
+  left: 0;
+}
+
+div .form-Dani:-ms-input-placeholder ~ .barra::before {
+  box-shadow: 2px 2px 4px black;
+  content: "";
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  /*Meter color*/
+  /*background linear gradient??*/
+  background: linear-gradient(90deg, #e0b0ff 0%, #19088c 100%);
+  -ms-transition: 0.5s ease width;
+  transition: 0.5s ease width;
+  left: 0;
+}
+
+.barra::before,
+div .form-Dani:placeholder-shown ~ .barra::before {
+  box-shadow: 2px 2px 4px black;
+  content: "";
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  /*Meter color*/
+  /*background linear gradient??*/
+  background: linear-gradient(90deg, #e0b0ff 0%, #19088c 100%);
+  transition: 0.5s ease width;
+  left: 0;
+}
+
+.ens,
+div .form-Dani:focus ~ .barra::before,
+div .form-Dani ~ .barra::before {
+  width: 100%;
+}
+
+.ens > .form-Dani#mensaje:focus ~ .barra::before,
+div .form-Dani#mensaje ~ .barra::before {
+  height: 2px;
+}
+
+.sombra {
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.199), -6px -6px 5px rgba(0, 0, 0, 0.199), 6px -6px 5px rgba(0, 0, 0, 0.199), -6px 6px 5px rgba(0, 0, 0, 0.199);
+  background-color: #f8f9fa;
+}
+
+div .form-Dani {
+  background-color: transparent;
+  border: none;
+  display: block;
+  border-bottom: 1px solid #5e5c5c;
+  position: relative;
+  width: 100%;
+  /* rgb(94, 92, 92);*/
+  /*Probando*/
+  transition: 1s ease all;
+}
+
+div .form-Dani:-moz-placeholder-shown ~ .form-label {
+  -moz-transition: 0.5s ease-in all;
+  transition: 0.5s ease-in all;
+  color: #5e5c5c;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  font-size: 16px;
+}
+
+div .form-Dani:-ms-input-placeholder ~ .form-label {
+  -ms-transition: 0.5s ease-in all;
+  transition: 0.5s ease-in all;
+  color: #5e5c5c;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  font-size: 16px;
+}
+
+div .form-Dani:placeholder-shown ~ .form-label {
+  transition: 0.5s ease-in all;
+  color: #5e5c5c;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  font-size: 16px;
+}
+
+.form-Dani#mensaje {
+  border: none;
+  display: block;
+  border: 1px solid #5e5c5c;
+  border-bottom: 1px solid #5e5c5c;
+  resize: none;
+  background-color: transparent;
+}
+
+div .form-Dani:focus ~ .form-label,
+div .form-label {
+  /*Rellenar*/
+  font-size: 12px;
+  transition: 0.5s ease-in all;
+  top: -18px;
+  left: 1px;
+  color: #5d5e5e;
+  position: absolute;
+}
+
+div .form-Dani:focus,
+div textarea:focus {
+  outline: none;
+  color: #5d5e5e;
+}
+
+.containerRelative {
+  position: relative;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .ajustar {
+    width: 80%;
   }
 }
 
