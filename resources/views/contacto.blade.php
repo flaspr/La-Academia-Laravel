@@ -19,15 +19,15 @@ aria-hidden="true">
                 @csrf
                 <div class="col-md-5 row ">
                     <div class="containerRelative px-0  col-12 col-md-12 my-4">
-                        <input placeholder=" " type="text" name="name" class="form-Dani" id="validationCustom01" required>
+                        <input placeholder=" " type="text" name="name" class="form-Dani" id="name" required>
                         <span class="barra  "></span>
-                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <label for="name" class="form-label">Nombre</label>
                     </div>
 
                     <div class=" containerRelative px-0 col-12 col-md-12 my-4">
-                        <input placeholder=" " type="text" name="subname" class="form-Dani" id="validationCustom01" required>
+                        <input placeholder=" " type="text" name="subname" class="form-Dani" id="subname" required>
                         <span class="barra "></span>
-                        <label for="validationCustom01" class="form-label">Apellidos</label>
+                        <label for="subname" class="form-label">Apellidos</label>
                     </div>
         
                     <div class="containerRelative px-0 col-12 col-md-12 my-4">
@@ -50,8 +50,7 @@ aria-hidden="true">
             </form>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
     </div>
 </div>
