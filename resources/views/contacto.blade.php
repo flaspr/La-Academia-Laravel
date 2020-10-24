@@ -37,7 +37,7 @@ aria-hidden="true">
         
                 </div>
                 
-                </div>
+                
         
                 <div class="pr-3 col-md-12 containerRelative">
                     <textarea class="form-Dani col-12" placeholder=" "  id="mensaje" rows="4"required></textarea>
