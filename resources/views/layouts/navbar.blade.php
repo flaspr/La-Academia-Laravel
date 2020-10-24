@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('matricula') }}">
+                    <a data-toggle="modal" data-target="#ContactoModal">
                         Contacto
                     </a>
                 </li>
