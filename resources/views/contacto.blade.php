@@ -36,35 +36,7 @@ aria-hidden="true">
                     </div>
         
                 </div>
-                <div class="col-md-7 pl-4 m-0   ">
-                    <div class="row justify-content-between">
-                        <div class="container  col-md-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="pl-2 my-3">Asignaturas</h3>
-                                    <span class="subrayado"></span>
-                                </div> 
-                            </div>
-                            <ul>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Matemáticas</label></input></li>
-                                <span class="checkeado" ></span>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Física</label></input></li>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Química</label></input></li>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Inglés</label></input></li>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Francés</label></input></li>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Lengua y literatura</label></input></li>
-                                <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="cb-deportes" value="gusta"> Física y química</label></input></li>
-                            </ul>
-                        </div>
-                        <div class="container  col-md-6 ">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="pl-2 my-3">Asignaturas</h3>
-                                    <span class="subrayado"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
         
                 <div class="pr-3 col-md-12 containerRelative">
