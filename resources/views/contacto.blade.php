@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+
     <!-- Modal -->
 <div class="modal fade" id="ContactoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 aria-hidden="true">
 <div class="modal-dialog" role="document">
+    <link rel="stylesheet" href="css/matricula.css">
     <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -19,7 +14,7 @@ aria-hidden="true">
             </button>
         </div>
         <div class="modal-body">
-            Mensaje enviado correctamente :)
+            Contacta con nosotros
             <form class="row g-3 was-validated mt-3" action="{{ route('matricula.send') }}" method="POST">
                 @csrf
                 <div class="col-md-5 row ">
@@ -91,5 +86,4 @@ aria-hidden="true">
 </div>
 </div>
 
-</body>
 </html>
