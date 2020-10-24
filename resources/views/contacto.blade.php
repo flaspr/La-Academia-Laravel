@@ -6,7 +6,7 @@
 aria-hidden="true">
 <div class="modal-dialog" role="document">
     <link rel="stylesheet" href="css/matricula.css">
-    <div class="modal-content">
+    <div class="modal-content" style="width: 20em">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
             <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
