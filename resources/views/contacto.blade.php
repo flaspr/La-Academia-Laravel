@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Modal -->
+<div class="modal fade" id="ContactoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg"  role="document" >
+    <link rel="stylesheet" href="css/matricula.css">
+    <div class="modal-content" >
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacta con nosotros</h5>
+            <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            
+            <form class="row g-3 was-validated mt-3" action="{{ route('matricula.send') }}" method="POST">
+                @csrf
+                <div class="col-md-5 row ">
+                    <div class="containerRelative px-0  col-12 col-md-12 my-4">
+                        <input placeholder=" " type="text" name="name" class="form-Dani" id="name" required>
+                        <span class="barra  "></span>
+                        <label for="name" class="form-label">Nombre</label>
+                    </div>
+
+                    <div class=" containerRelative px-0 col-12 col-md-12 my-4">
+                        <input placeholder=" " type="text" name="subname" class="form-Dani" id="subname" required>
+                        <span class="barra "></span>
+                        <label for="subname" class="form-label">Apellidos</label>
+                    </div>
+        
+                    <div class="containerRelative px-0 col-12 col-md-12 my-4">
+                        <input placeholder=" " type="email" name="email" class="form-Dani" id="email" required>
+                        <span class="barra "></span>
+                        <label for="email" class="form-label">Correo electrónico</label>
+                    </div>
+        
+                </div>
+                
+                <div class="col-md-7 ml-auto row container-xl">
+                    <div class="col-12 text-center">
+                        <h3>Métodos de Contacto</h3>
+                        <span class="subrayado"> </span>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        Facebook:
+                        Whatsapp:
+                        Dirección:
+                    </div>
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-6 col-8 bg-success">
+                                tus muertos wany pesao con los div
+                            </div>
+                            <div class="col-md-6 col-4 bg-danger">
+                                okay pesao callate ya
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pr-3 col-md-12 containerRelative">
+                    <textarea class="form-Dani col-12" placeholder=" "  id="mensaje" rows="4"required></textarea>
+                    <span class="barra"></span>
+                    <label for="validationTextarea" class="form-label">Mensaje</label>
+                </div>
+        
+                <div class="col-12">
+                    <button class="btn btn-success ml-4" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+</html>

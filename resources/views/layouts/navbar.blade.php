@@ -27,6 +27,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link checkbox-Dani"  data-toggle="modal" data-target="#ContactoModal">
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="moodle">
                         <i class="fas fa-graduation-cap fa-2x"></i></a>
                 </li>

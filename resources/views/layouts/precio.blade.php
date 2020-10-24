@@ -129,7 +129,7 @@
                     <div class="my-3 text-small text-center p-4">
                         <p class="h4">¡Consultanos!</p>
                         <p class="h5 text-wrap">No dudes en preguntarnos una combinación, te contestaremos con el precio en la mayor brevedad posible</p>
-                        <a class="btn icon effect effect-5 bg-dark text-light my-2 display-8 border-0">Contácta con nosotros</a>
+                        <a class="btn icon effect effect-5 bg-dark text-light my-2 display-8 border-0" data-toggle="modal" data-target="#ContactoModal">Contácta con nosotros</a>
                     </div>
                 </div>
             </div>
