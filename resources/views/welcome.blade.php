@@ -31,7 +31,7 @@ amigos para su entrenamiento. También puedes convertirte en uno de nuestros cli
 @include('layouts.card-info-la-academia')
 @include('layouts.pricing')
 @include('layouts.precio')
-
+@include('contacto')
 @include('layouts.card-info-covid')
 <!-- CONTENIDO FINAL -->
 @endsection
