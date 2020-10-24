@@ -9,7 +9,7 @@ aria-hidden="true">
     <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
@@ -23,7 +23,7 @@ aria-hidden="true">
                         <span class="barra  "></span>
                         <label for="validationCustom01" class="form-label">Nombre</label>
                     </div>
-                    
+
                     <div class=" containerRelative px-0 col-12 col-md-12 my-4">
                         <input placeholder=" " type="text" name="subname" class="form-Dani" id="validationCustom01" required>
                         <span class="barra "></span>
