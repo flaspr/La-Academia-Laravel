@@ -59,3 +59,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Configuración correo local
+
+En el archivo ".env" hay un atributo llamado "MAIL_MAILER", para desarrollo tendremos dos opciones:
+
+    1. MAIL_MAILER=log. Con esta opción guardaremos los correos enviados en el archivo "La-Academia-Laravel\storage\logs\laravel.log". 
+    2. MAIL_MAILER=smtp. Con esta opción podremos "interceptar" los correos enviados mientras estemos haciendo pruebas en una página externa llamada "mailtrap.io" (esta opción es mejor a la hora de desarrollar).
+
+En ambos casos tendremos que seguir configurando otros apartados. 
+
+Siguiendo en el archivo ".env" tendremos que añadir dos variables (si es que no estuvieran) MAIL_FROM_ADDRESS y
+MAIL_FROM_NAME. Estos campos podremos igualarlos a un correo y un nombre cualquiera (No tienen que existir). Por ejemplo:
+
+    MAIL_FROM_ADDRESS=hello@example.com
+    MAIL_FROM_NAME='Hello example'
+
+Con esto acabaría la configuración si escogiésemos la opción de log.
+
+En caso de usar mailtrap tendremos que iniciar sesión en "mailtrap.io", crear una nueva "Inbox" donde nos llegarán los mails. Clicamos sobre ella y en el apartado SMTP Settings en la opción "user" nos vendrá una clave separada por dos puntos (:) de la siguiente manera "clave1:clave2" y tendremos que ponerla en los respectivos atributos de ".env" de la siguiente manera: 
+
+    MAIL_USERNAME=clave1
+    MAIL_PASSWORD=clave2
+
+Con esto tendríamos la configuración del correo en ambos casos completa.
+
+## Crear correo para enviar
+
+Aquí te puedes fijar en las clases "MatriculationController" que tendrá el método "Mail::to..." para enviar correos. Tendrás que fijarte en la clase "MensajeEnviado" dentro de "app/Mail" para ver cómo funciona el sistema de enviar correos (IMPORTANTE: Para crear la clase que vaya dentro de la carpeta mail tendrás que usar EN LA CONSOLA DE LARAGON el comando "php artisan make:mail). Finalmente, si te fijas en la clase "matriculacionMail.blade.php" lo que se encuentra dentro de dicha clase, será el contenido del correo que vayas a enviar.
+
+Si tienes alguna duda de cómo funciona todo esto aquí hay un vídeo que te explicará todo lo necesario para que funcione. https://www.youtube.com/watch?v=giOjirSYksg&list=PLpKWS6gp0jd_uZiWmjuqLY7LAMaD8UJhc&index=20&ab_channel=Aprendible
