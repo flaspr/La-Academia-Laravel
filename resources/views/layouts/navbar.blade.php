@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#ContactoModal">
+                    <a class="nav-link checkbox-Dani"  data-toggle="modal" data-target="#ContactoModal">
                         Contacto
                     </a>
                 </li>
