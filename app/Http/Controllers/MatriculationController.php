@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\MensajeEnviado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class MatriculationController extends Controller
 {
@@ -20,8 +23,12 @@ class MatriculationController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'subname' => 'required'
+            
         ]);
 
+        //Enviamos el email
+
+        Mail::to('dosekcoc@gmail.com')-> queue(new MensajeEnviado($msgs));
 
         return back()->with('matriculaConfirmado','MatriculaConfirmado prueba');
     }
