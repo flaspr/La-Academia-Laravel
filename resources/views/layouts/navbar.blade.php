@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contacto') }}">
+                    <a class="nav-link" href="{{ route('matricula') }}">
                         Contacto
                     </a>
                 </li>
