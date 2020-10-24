@@ -4,17 +4,17 @@
     <!-- Modal -->
 <div class="modal fade" id="ContactoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 aria-hidden="true">
-<div class="modal-dialog" role="document">
+<div class="modal-dialog modal-lg"  role="document" >
     <link rel="stylesheet" href="css/matricula.css">
-    <div class="modal-content w-80" >
+    <div class="modal-content" >
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Contacta con nosotros</h5>
             <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-            Contacta con nosotros
+            
             <form class="row g-3 was-validated mt-3" action="{{ route('matricula.send') }}" method="POST">
                 @csrf
                 <div class="col-md-5 row ">
@@ -37,7 +37,30 @@ aria-hidden="true">
                     </div>
         
                 </div>
-        
+                
+                <div class="col-md-7 ml-auto row container-xl">
+                    <div class="col-12 text-center">
+                        <h3>Métodos de Contacto</h3>
+                        <span class="subrayado"> </span>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        Facebook:
+                        Whatsapp:
+                        Dirección:
+                    </div>
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-6 col-8 bg-success">
+                                tus muertos wany pesao con los div
+                            </div>
+                            <div class="col-md-6 col-4 bg-danger">
+                                okay pesao callate ya
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="pr-3 col-md-12 containerRelative">
                     <textarea class="form-Dani col-12" placeholder=" "  id="mensaje" rows="4"required></textarea>
                     <span class="barra"></span>
