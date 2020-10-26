@@ -24,3 +24,5 @@ Route::get('/matriculacion', [MatriculationController::class, 'index'])->name('m
 Route::post('/matriculacion', [MatriculationController::class, 'send'])->name('matricula.send');
 Route::get('/contacto', [ContactoController::class, 'index'])->name('contacto');
 Route::post('/contacto', [ContactoController::class, 'send'])->name('contacto.send');
+Route::get('/trabajo', [TrabajoController::class, 'index'])->name('trabajo');
+Route::post('/trabajo', [TrabajoController::class, 'send'])->name('trabajo.send');

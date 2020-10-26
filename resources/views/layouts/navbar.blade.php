@@ -23,12 +23,17 @@
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('matricula') }}">
-                        Solicitar Matrícula
+                        Solicitar matrícula
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link checkbox-Dani"  data-toggle="modal" data-target="#ContactoModal">
                         Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('trabajo') }}">
+                        Trabaja con nosotros
                     </a>
                 </li>
                 <li class="nav-item">
