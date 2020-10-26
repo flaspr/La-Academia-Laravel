@@ -7,13 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    Tienes una nueva solicitud de matrícula de {{$mensaje['name']}} {{$mensaje['subname']}}.
+   <p>
+   <h2>Tienes una nueva solicitud de matrícula de {{$mensaje['nameM']}} {{$mensaje['subnameM']}}.</h2> <br>
 
-    Quiere matricularse en las asignaturas de *Rellenar con las asignaturas*
+    
+    Quiere matricularse en las asignaturas de *Rellenar con las asignaturas* <br>
 
-    Mensaje adjunto:
-    {{$mensaje['mensaje']}}
+    <strong>Mensaje adjunto: </strong>
+    <br>
+    {{$mensaje['mensajeM']}}
+    <br>
 
-    Correo de contacto del solicitante: {{$mensaje['email']}}
+    Correo de contacto del solicitante: {{$mensaje['emailM']}}   
+    </p> 
+
 </body>
 </html>

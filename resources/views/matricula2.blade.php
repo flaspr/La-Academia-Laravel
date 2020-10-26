@@ -19,20 +19,20 @@
             @csrf
             <div class="col-md-5 row ">
                 <div class="containerRelative px-0  col-12 col-md-12 my-4">
-                    <input placeholder=" " type="text" name="name" value="{{old('name')}}" class="form-Dani" id="name" required>
+                    <input placeholder=" " type="text" name="nameM" value="{{old('nameM')}}" class="form-Dani" id="nameM" required>
                     <span class="barra  "></span>
-                    <label for="name" class="form-label" onclick="document.getElementById('name').focus()">Nombre</label>
+                    <label for="nameM" class="form-label" onclick="document.getElementById('nameM').focus()">Nombre</label>
                 </div>
                 <div class=" containerRelative px-0 col-12 col-md-12 my-4">
-                    <input placeholder=" " type="text" name="subname" value="{{old('subname')}}" class="form-Dani" id="subname" required>
+                    <input placeholder=" " type="text" name="subnameM" value="{{old('subnameM')}}" class="form-Dani" id="subnameM" required>
                     <span class="barra "></span>
-                    <label for="subname" class="form-label" onclick="document.getElementById('subname').focus()">Apellidos</label>
+                    <label for="subnameM" class="form-label" onclick="document.getElementById('subnameM').focus()">Apellidos</label>
                 </div>
 
                 <div class="containerRelative px-0 col-12 col-md-12 my-4">
-                    <input placeholder=" " type="email" name="email" value="{{old('email')}}" class="form-Dani" id="email" required>
+                    <input placeholder=" " type="email" name="emailM" value="{{old('emailM')}}" class="form-Dani" id="emailM" required>
                     <span class="barra "></span>
-                    <label for="email" class="form-label" onclick="document.getElementById('email').focus()">Correo electrónico</label>
+                    <label for="emailM" class="form-label" onclick="document.getElementById('emailM').focus()">Correo electrónico</label>
                 </div>
 
             </div>
@@ -78,9 +78,9 @@
             </div>
 
             <div class="pr-3 col-md-12 containerRelative">
-                <textarea class="form-Dani col-12" placeholder=" " value="{{old('mensaje')}}" name="mensaje" id="mensaje" rows="4"required></textarea>
+                <textarea class="form-Dani col-12" placeholder=" " value="{{old('mensajeM')}}" name="mensajeM" id="mensajeM" rows="4"required></textarea>
                 <span class="barra"></span>
-                <label for="validationTextarea" onclick="document.getElementById('mensaje').focus()" class="form-label">Mensaje</label>
+                <label for="validationTextarea" onclick="document.getElementById('mensajeM').focus()" class="form-label">Mensaje</label>
             </div>
 
             <div class="col-12">

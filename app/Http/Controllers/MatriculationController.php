@@ -20,10 +20,10 @@ class MatriculationController extends Controller
 
         //Aqui incluiremos un mensaje de sesion
         $msgs = request() -> validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'subname' => 'required'
-            
+            'nameM' => 'required',
+            'emailM' => 'required|email',
+            'subnameM' => 'required',
+            'mensajeM' => 'nullable'
         ]);
 
         //Enviamos el email
