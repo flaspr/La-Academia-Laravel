@@ -6,7 +6,7 @@
 
 <div class="bg-principal py-4 ">
     @if(session('matriculaConfirmado'))
-    @include('confirmacion' )
+        @include('confirmacion' )
     @endif
 
     <link rel="stylesheet" href="css/matricula.css">
@@ -22,27 +22,43 @@
             @csrf
             <div class="col-md-5 row ">
                 <div class="containerRelative px-0  col-12 col-md-12 my-4">
-                    <input placeholder=" " type="text" name="name" value="{{old('name')}}" class="form-Dani" id="name"
-                        required>
+                    <input placeholder=" " type="text" name="name" value="{{ old('name') }}"
+                        class="form-Dani" id="name" required>
                     <span class="barra  "></span>
                     <label for="name" class="form-label"
                         onclick="document.getElementById('name').focus()">Nombre</label>
                 </div>
+                @error('name')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+
+
                 <div class=" containerRelative px-0 col-12 col-md-12 my-4">
-                    <input placeholder=" " type="text" name="subname" value="{{old('subname')}}" class="form-Dani"
-                        id="subname" required>
+                    <input placeholder=" " type="text" name="subname" value="{{ old('subname') }}"
+                        class="form-Dani" id="subname" required>
                     <span class="barra "></span>
                     <label for="subname" class="form-label"
                         onclick="document.getElementById('subname').focus()">Apellidos</label>
                 </div>
+                @error('subname')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+
 
                 <div class="containerRelative px-0 col-12 col-md-12 my-4">
-                    <input placeholder=" " type="email" name="email" value="{{old('email')}}" class="form-Dani"
-                        id="email" required>
+                    <input placeholder=" " type="email" name="email" value="{{ old('email') }}"
+                        class="form-Dani" id="email" required>
                     <span class="barra "></span>
                     <label for="email" class="form-label" onclick="document.getElementById('email').focus()">Correo
                         electrónico</label>
                 </div>
+                @error('email')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+
 
             </div>
             <div class="col-md-7 pl-4 m-0   ">
@@ -55,22 +71,35 @@
                             </div>
                         </div>
                         <ul>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="mat2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Matemáticas">
                                     Matemáticas</label></input></li>
                             <span class="checkeado"></span>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fis2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Física">
                                     Física</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="qui2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Química">
                                     Química</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="ing2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Inglés">
                                     Inglés</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fra2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Francés">
                                     Francés</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="lyt2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Lengua y literatura">
                                     Lengua y literatura</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fyq2" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas2[]"
+                                        value="Física y química">
                                     Física y química</label></input></li>
                         </ul>
+                        @error('horas2')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+
+
                     </div>
                     <div class="container  col-md-6 ">
                         <div class="row">
@@ -80,29 +109,42 @@
                             </div>
                         </div>
                         <ul>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="mat3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Matemáticas">
                                     Matemáticas</label></input></li>
                             <span class="checkeado"></span>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fis3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Física">
                                     Física</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="qui3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Química">
                                     Química</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="ing3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Inglés">
                                     Inglés</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fra3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Francés">
                                     Francés</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="lyt3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Lengua y literatura">
                                     Lengua y literatura</label></input></li>
-                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="fyq3" value="gusta">
+                            <li> <label class="checkbox-Dani"><input class="" type="checkbox" name="horas3[]"
+                                        value="Física y química">
                                     Física y química</label></input></li>
                         </ul>
+                        @error('horas3')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+
+
+
                     </div>
                 </div>
             </div>
 
             <div class="pr-3 col-md-12 containerRelative">
-                <textarea class="form-Dani col-12" placeholder=" " value="{{old('mensaje')}}" name="mensaje"
-                    id="mensaje" rows="4" required></textarea>
+                <textarea class="form-Dani col-12" placeholder=" " value="{{ old('mensaje') }}"
+                    name="mensaje" id="mensaje" rows="4"></textarea>
                 <span class="barra"></span>
                 <label for="validationTextarea" onclick="document.getElementById('mensaje').focus()"
                     class="form-label">Mensaje</label>

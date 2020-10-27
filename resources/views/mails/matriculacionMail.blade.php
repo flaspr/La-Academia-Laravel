@@ -13,7 +13,22 @@
         <h2> Tienes una nueva <strong>{{ $subject }}</strong> de {{ $mensaje->name }} {{ $mensaje->subname }}. </h2>
         <hr>
         <h3> Quiere matricularse en las asignaturas: </h3>
-        <p>*Rellenar con las asignaturas*</p>
+        @isset($mensaje->horas2)
+            <h4>Asignaturas de 2 horas semanales</h4>
+            <ul>
+                @foreach($mensaje->horas2 as $asignatura)
+                    <li>{{ $asignatura }}</li>
+                @endforeach
+            </ul>
+        @endisset
+        @isset($mensaje->horas3)
+            <h4>Asignaturas de 3 horas semanales</h4>
+            <ul>
+                @foreach($mensaje->horas3 as $asignatura)
+                    <li>{{ $asignatura }}</li>
+                @endforeach
+            </ul>
+        @endisset
         @isset($mensaje->mensaje)
             <hr>
             <h3>Mensaje adjunto: </h3>

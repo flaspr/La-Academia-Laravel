@@ -11,7 +11,7 @@ class MailMatricula extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "solicitud de matrícula";
+    public $subject = "Solicitud de Matrícula";
     public $mensaje;
     /**
      * Create a new message instance.

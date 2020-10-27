@@ -11,7 +11,7 @@ class MailTrabajo extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "solicitud de trabajo";
+    public $subject = "Solicitud de Trabajo";
     public $mensaje;
     /**
      * Create a new message instance.

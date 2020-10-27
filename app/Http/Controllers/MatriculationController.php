@@ -25,6 +25,8 @@ class MatriculationController extends Controller
             'email' => 'required|email',
             'subname' => 'required',
             'mensaje' => 'nullable',
+            'horas3' => 'required_without_all:horas2',
+            'horas2' => 'required_without_all:horas3'
         ]);
 
         //Enviamos el email

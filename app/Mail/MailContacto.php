@@ -10,7 +10,7 @@ class MailContacto extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "solicitud de contacto";
+    public $subject = "Solicitud de Contacto";
     public $mensaje;
     /**
      * Create a new message instance.
