@@ -1,4 +1,3 @@
-
 $(".slider-header").slick({
     lazyLoad: "ondemand",
     dots: true,
@@ -13,13 +12,15 @@ $(".slider-header").slick({
     slidesToShow: 1,
     pauseOnFocus: false,
     pauseOnHover: false,
-    responsive: [{
-        breakpoint: 480,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1
+    responsive: [
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1
+            }
         }
-    }]
+    ]
 });

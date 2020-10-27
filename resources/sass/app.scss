@@ -19,7 +19,6 @@
 
 @import "matricula.scss";
 
-
 // Slider
 @import "slick-slider/slick.scss";
 @import "slick-slider/slick-theme.css";
@@ -32,7 +31,7 @@
     }
 
     .slick-dots {
-        background-color: $oscuro;
+        background-color: #343a40;
     }
 
     .slick-dots li button:before {
