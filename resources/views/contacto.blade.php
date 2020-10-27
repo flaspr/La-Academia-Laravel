@@ -42,7 +42,7 @@
                             <label for="nameC" class="form-label"
                                 onclick="document.getElementById('nameC').focus()">Nombre</label>
                         </div>
-                        @error('name')
+                        @error('nameC')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
 
@@ -56,7 +56,7 @@
                             <label for="subnameC" class="form-label"
                                 onclick="document.getElementById('subnameC').focus()">Apellidos</label>
                         </div>
-                        @error('subname')
+                        @error('subnameC')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
 
@@ -69,10 +69,9 @@
                             <label for="emailC" class="form-label"
                                 onclick="document.getElementById('emailC').focus()">Correo electrónico</label>
                         </div>
-                        @error('email')
+                        @error('emailC')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
-
 
 
                         <div class="col-md-12 containerRelative mx-1">
@@ -82,7 +81,7 @@
                             <label for="validationTextarea" onclick="document.getElementById('mensajeC').focus()"
                                 class="form-label">Mensaje</label>
                         </div>
-                        @error('mensaje')
+                        @error('mensajeC')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
 

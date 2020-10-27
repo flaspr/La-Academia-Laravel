@@ -10,13 +10,14 @@
 
 <body>
     <p>
-        <h2> Tienes una nueva <strong>{{ $subject }}</strong> de {{ $mensaje->name }} {{ $mensaje->subname }}. </h2>
+        <h2> Tienes una nueva <strong>{{ $subject }}</strong> de {{ $mensaje->nameC }} {{ $mensaje->subnameC }}.
+        </h2>
         <hr>
         <h3>Mensaje adjunto: </h3>
-        <p> {{ $mensaje->mensaje }} </p>
+        <p> {{ $mensaje->mensajeC }} </p>
         <hr>
         <h3>Correo de contacto del solicitante:</h3>
-        <p>{{ $mensaje->email }}</p>
+        <p>{{ $mensaje->emailC }}</p>
     </p>
 
 </body>
