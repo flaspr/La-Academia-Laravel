@@ -75,7 +75,7 @@
                                 required>{{ old('mensajeC') }}</textarea>
                             <span class="barra"></span>
                             <label for="validationTextarea" onclick="document.getElementById('mensajeC').focus()"
-                                class="form-label">Mensaje</label>
+                                class="form-label">Mensajeh</label>
                         </div>
                         @error('mensajeC')
                             <div class="alert alert-danger">{{ $message }}</div>
