@@ -1,5 +1,5 @@
 <nav id="navbar" class="{{ $bg ?? "bg-dark" }} {{ $navbar ?? "navbar-dark" }}
-    navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-expand-sm shadow-lg py-3">
+    navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-expand-md shadow-lg py-3">
     <div class="container">
 
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link checkbox-Dani"  data-toggle="modal" data-target="#ContactoModal">
+                    <a class="nav-link checkbox-Dani" data-toggle="modal" data-target="#ContactoModal">
                         Contacto
                     </a>
                 </li>

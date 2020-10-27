@@ -72,7 +72,7 @@
 
                         <div class="col-md-12 containerRelative mx-1">
                             <textarea class="form-Dani col-12" placeholder=" " name="mensajeC" id="mensajeC" rows="4"
-                                required> {{ old('mensajeC') }} </textarea>
+                                required>{{ old('mensajeC') }}</textarea>
                             <span class="barra"></span>
                             <label for="validationTextarea" onclick="document.getElementById('mensajeC').focus()"
                                 class="form-label">Mensaje</label>
