@@ -16401,7 +16401,7 @@ body {
 
 .parallax {
   /* The image used */
-  background: url(https://picsum.photos/g/1920/1080?blur);
+  background: url(/images/libros.jpg);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -16419,7 +16419,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(255, 255, 255, 0.801);
+  background-color: rgba(255, 255, 255, 0.63);
 }
 
 /*Elementos lista*/
@@ -16575,7 +16575,7 @@ div .form-Dani#mensaje ~ .barra::before {
 }
 
 .sombra {
-  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.199), -6px -6px 5px rgba(0, 0, 0, 0.199), 6px -6px 5px rgba(0, 0, 0, 0.199), -6px 6px 5px rgba(0, 0, 0, 0.199);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.199);
   background-color: #f8f9fa;
 }
 

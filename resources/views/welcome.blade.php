@@ -3,7 +3,6 @@
 
 @section('content')
 
-
 <!-- CONTENIDO INICIO -->
 @component('components.slider')
 

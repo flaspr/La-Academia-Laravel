@@ -116,9 +116,7 @@ div .form-Dani#mensaje ~ .barra::before {
 }
 
 .sombra {
-    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.199),
-        -6px -6px 5px rgba(0, 0, 0, 0.199), 6px -6px 5px rgba(0, 0, 0, 0.199),
-        -6px 6px 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.199);
     background-color: #f8f9fa;
 }
 
