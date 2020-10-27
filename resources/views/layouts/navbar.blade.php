@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="moodle">
+                    <a class="nav-link" href="https://laacademia.milaulas.com/">
                         <i class="fas fa-graduation-cap fa-2x"></i></a>
                 </li>
             </ul>
