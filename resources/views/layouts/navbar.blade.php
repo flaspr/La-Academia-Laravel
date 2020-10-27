@@ -22,17 +22,17 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('matricula') }}">
+                    <a class="nav-link text-white" href="{{ route('matricula') }}">
                         Solicitar matrícula
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link checkbox-Dani" data-toggle="modal" data-target="#ContactoModal">
+                    <a class="nav-link text-white checkbox-Dani" data-toggle="modal" data-target="#ContactoModal">
                         Contacto
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('trabajo') }}">
+                    <a class="nav-link text-white" href="{{ route('trabajo') }}">
                         Trabaja con nosotros
                     </a>
                 </li>
