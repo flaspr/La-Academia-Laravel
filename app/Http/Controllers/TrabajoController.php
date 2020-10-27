@@ -12,4 +12,8 @@ class TrabajoController extends Controller
         return view('trabajo');
 
     }
+
+    public function send(){
+        return "Petición enviada";
+    }
 }

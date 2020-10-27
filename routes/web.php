@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\MatriculationController;
-use App\Http\Controllers\ContactoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrabajoController;
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\MatriculationController;
 
 /*
 |--------------------------------------------------------------------------
