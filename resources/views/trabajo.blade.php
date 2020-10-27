@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="bg-principal">
+<div class="bg-principal py-4 my-3">
     <div class="text-center">
-        <h1 class="display-1">¿Quieres trabajar con nosotros?</h1>
-        
+        <h1 class="display-4">¿Quieres trabajar con nosotros?</h1>
+
         <h4>Contamos con profesores altamente cualificados, con años de experiencia y clases
             con grupos reducidos. </h4>
     </div>
@@ -63,7 +63,7 @@
                     <label for="validationTextarea" onclick="document.getElementById('mensaje').focus()"
                         class="form-label">Mensaje</label>
                 </div>
-          
+
 
                 <div class="containerRelative px-0 col-12 col-md-12 my-4">
                     <div class="form-file form-file-lg">

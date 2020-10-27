@@ -1,10 +1,10 @@
 <div class="section-pricing bg-principal text-light py-6">
-    <div class="container-xl">
+    <div class="container">
         <div class="row">
-            <div class="col-12 col-md-12 col-lg-5">
+            <div class="col-12 col-md-12 col-lg-6 mb-4 mb-lg-0">
                 @include('layouts.asignaturas')
             </div>
-            <div class="col-12 col-md-12 col-lg-7">
+            <div class="col-12 col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-12">
                         @include('layouts.niveles')

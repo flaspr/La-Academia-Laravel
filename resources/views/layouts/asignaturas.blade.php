@@ -12,10 +12,12 @@
 <div class="row text-center align-items-stretch justify-content-center align-self-center">
 
     <!-- Carta Precio -->
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="bg-danger py-3 h-100  rounded-lg">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="bg-danger py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/matematicas.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/matematicas.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h2 class="h5 text-uppercase mb-3 text-wrap">Matemáticas</h2>
         </div>
@@ -24,10 +26,11 @@
 
 
     <!-- Carta Precio -->
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="bg-dark py-3 h-100 rounded-lg">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="bg-dark py-3 h-100 d-flex flex-column justify-content-center rounded-lg" style="min-height: 150px">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/quimica.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/quimica.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Química</h3>
             <!--<div>
@@ -44,10 +47,12 @@
     <!-- FIN Carta Precio -->
     <!-- Carta Precio -->
 
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="py-3 h-100 rounded-lg" style="background-color: #e2006a">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px;background-color: #e2006a">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/atomo.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/atomo.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Física</h3>
         </div>
@@ -55,10 +60,12 @@
     <!-- FIN Carta Precio -->
     <!-- Carta Precio -->
 
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="py-3 h-100 rounded-lg" style="background-color: #517aff">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px;background-color: #517aff">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/lengua.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/lengua.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Lengua y literatura</h3>
         </div>
@@ -66,11 +73,14 @@
     <!-- FIN Carta Precio -->
     <!-- Carta Precio -->
 
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="py-3 h-100 rounded-lg" style="background-color:#42cf00">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px;background-color:#38b100">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/atomo.svg') }}" class="img-fluid" width="20%">
-                <img src="{{ asset('/images/asignaturas/quimica.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/atomo.svg') }}" class="img-fluid"
+                    width="20%">
+                <img src="{{ asset('/images/asignaturas/quimica.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Física y química</h3>
         </div>
@@ -78,10 +88,12 @@
     <!-- FIN Carta Precio -->
     <!-- Carta Precio -->
 
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="py-3 h-100 rounded-lg" style="background-color: #7c44ff">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px; background-color: #7c44ff">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/ingles.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/ingles.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Inglés</h3>
         </div>
@@ -89,10 +101,12 @@
     <!-- FIN Carta Precio -->
     <!-- Carta Precio -->
 
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
-        <div class="py-3 h-100 rounded-lg" style="background-color: #ff5614">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
+            style="min-height: 150px;background-color: #ff5614">
             <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/frances.svg') }}" class="img-fluid" width="20%">
+                <img src="{{ asset('/images/asignaturas/frances.svg') }}" class="img-fluid"
+                    width="20%">
             </div>
             <h3 class="h5 text-uppercase mb-3 text-wrap">Francés</h3>
         </div>

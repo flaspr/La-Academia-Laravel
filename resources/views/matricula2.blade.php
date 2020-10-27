@@ -4,10 +4,11 @@
 
 
 
-<div class="bg-principal py-4 ">
+<div class="bg-principal py-4 my-3">
 
     <link rel="stylesheet" href="css/matricula.css">
-    <h1 class="text-dark text-center py-2">¿Aún no tienes plaza? ¡Esta es tu oportunidad, no esperes más que te quedas
+    <h1 class="display-6 text-dark text-center py-2">¿Aún no tienes plaza? ¡Esta es tu oportunidad, no esperes más que
+        te quedas
         sin ella!</h1>
     <div class="container mt-4  p-4 sombra rounded-lg text-dark ajustar">
 
