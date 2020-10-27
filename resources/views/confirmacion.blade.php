@@ -4,14 +4,15 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Mensaje enviado</h5>
                 <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 Mensaje enviado correctamente. Contactaremos con usted cuanto antes. <br>
-                {{-- <img src="{{ asset('/images/buzon.svg') }}" class="img-fluid " width="40%"> --}}
+                {{-- <img src="{{ asset('/images/buzon.svg') }}"
+                class="img-fluid " width="40%"> --}}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

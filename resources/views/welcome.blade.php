@@ -7,24 +7,36 @@
 <!-- CONTENIDO INICIO -->
 @component('components.slider')
 
-@include('layouts.header')
+    @include('layouts.header')
 
-@component('components.text-article')
-@slot('title')
-Conviértete en un cliente satisfecho
-@endslot
+    @component('components.text-article')
+        @slot('title')
+            Conviértete en un cliente satisfecho
+        @endslot
 
-@slot('body')
-Tenemos en cuenta los objetivos y metas de todos, incluso en
-un ambiente de clase grupal.
-@endslot
+        @slot('body')
+            Tenemos en cuenta los objetivos y metas de todos, incluso en
+            un ambiente de clase grupal.
+        @endslot
 
-@slot('optional')
-Debido a esto, podemos presumir de tener muchos clientes satisfechos,
-muchos de los cuales nos han dado grandes alabanzas y también nos han recomendado a familiares y
-amigos para su entrenamiento. También puedes convertirte en uno de nuestros clientes satisfechos.
-@endslot
-@endcomponent
+        @slot('optional')
+            Debido a esto, podemos presumir de tener muchos clientes satisfechos,
+            muchos de los cuales nos han dado grandes alabanzas y también nos han recomendado a familiares y
+            amigos para su entrenamiento. También puedes convertirte en uno de nuestros clientes satisfechos.
+        @endslot
+    @endcomponent
+
+    @component('components.text-article')
+        @slot('title')
+            La mejor opción
+        @endslot
+
+        @slot('body')
+            La Academia cuenta con profesores especializados que te ayudarán en las dificultades que te surjan para que
+            consigas el mejor rendimiento académico. Nuestros precios no tienen competencia, ni tampoco nuestra
+            dedicación.
+        @endslot
+    @endcomponent
 
 @endcomponent
 

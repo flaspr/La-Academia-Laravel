@@ -28,8 +28,8 @@ class ContactoController extends Controller
 
         //Enviamos el email
 
-        Mail::to('miadmeyfourproyecto@gmail.com')->send(new MailContacto($msgs));
+        Mail::to('dosekcoc@gmail.com')->send(new MailContacto($msgs));
 
-        return back()->with('matriculaConfirmado', 'MatriculaConfirmado prueba'); //aqui que tengo que poner?
+        return back()->with('emailConfirmado', 'Email enviado');
     }
 }

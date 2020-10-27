@@ -33,6 +33,6 @@ class MatriculationController extends Controller
 
         Mail::to('dosekcoc@gmail.com')->send(new MailMatricula($msgs));
 
-        return back()->with('matriculaConfirmado', 'MatriculaConfirmado prueba');
+        return back()->with('emailConfirmado', 'Email enviado');
     }
 }

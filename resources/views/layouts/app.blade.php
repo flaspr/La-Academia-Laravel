@@ -23,7 +23,9 @@
 
 <body class="body-responsive">
     <div id="app">
-
+        @if(session('emailConfirmado'))
+            @include('confirmacion' )
+        @endif
         @include('layouts.navbar')
 
         <main class="@yield('class')">

@@ -5,9 +5,6 @@
 
 
 <div class="bg-principal py-4 ">
-    @if(session('matriculaConfirmado'))
-        @include('confirmacion' )
-    @endif
 
     <link rel="stylesheet" href="css/matricula.css">
     <h1 class="text-dark text-center py-2">¿Aún no tienes plaza? ¡Esta es tu oportunidad, no esperes más que te quedas
@@ -154,12 +151,6 @@
                 <button class="btn btn-success ml-4" type="submit">Enviar</button>
             </div>
         </form>
-        <ul>
-
-            @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
     </div>
 </div>
 @endsection

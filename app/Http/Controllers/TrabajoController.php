@@ -20,10 +20,11 @@ class TrabajoController extends Controller
             'name' => 'required',
             'subname' => 'required',
             'email' => 'required|email',
-            'attached' => 'required|mimes:pdf'
+            'attached' => 'required|mimes:pdf|max:5000'
         ]);
 
         Mail::to('miadmeyfourproyecto@gmail.com')->send(new MailTrabajo($msgs));
-        return back()->with('matriculaConfirmado', 'MatriculaConfirmado prueba');
+
+        return back()->with('emailConfirmado', 'Email enviado');
     }
 }
