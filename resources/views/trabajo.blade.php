@@ -5,6 +5,7 @@
 <div class="bg-principal">
     <div class="text-center">
         <h1 class="display-1">¿Quieres trabajar con nosotros?</h1>
+        
         <h4>Contamos con profesores altamente cualificados, con años de experiencia y clases
             con grupos reducidos. </h4>
     </div>
@@ -55,13 +56,20 @@
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
-
+                <div class="mt-2 pr-3 col-md-12 containerRelative">
+                    <textarea class="form-Dani col-12" placeholder=" " value="{{ old('mensaje') }}"
+                        name="mensaje" id="mensaje" rows="4"></textarea>
+                    <span class="barra"></span>
+                    <label for="validationTextarea" onclick="document.getElementById('mensaje').focus()"
+                        class="form-label">Mensaje</label>
+                </div>
+          
 
                 <div class="containerRelative px-0 col-12 col-md-12 my-4">
                     <div class="form-file form-file-lg">
                         <input type="file" name="attached" class="form-file-input" id="customFile" required>
                         <label class="form-file-label" for="customFile">
-                            <span class="form-file-text">Curriculum en formato PDF</span>
+                            <span class="form-file-text">Currículum en formato PDF</span>
                             <span class="form-file-button">Adjuntar PDF</span>
                         </label>
                     </div>
