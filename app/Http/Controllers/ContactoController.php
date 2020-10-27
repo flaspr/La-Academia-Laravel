@@ -20,10 +20,10 @@ class ContactoController extends Controller
 
         //Aqui incluiremos un mensaje de sesion
         $msgs = (object) request()->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'subname' => 'required',
-            'mensaje' => 'required'
+            'nameC' => 'required',
+            'emailC' => 'required|email',
+            'subnameC' => 'required',
+            'mensajeC' => 'required'
         ]);
 
         //Enviamos el email

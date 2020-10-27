@@ -154,7 +154,12 @@
                 <button class="btn btn-success ml-4" type="submit">Enviar</button>
             </div>
         </form>
+        <ul>
 
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
     </div>
 </div>
 @endsection
