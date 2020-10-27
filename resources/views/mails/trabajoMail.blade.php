@@ -12,9 +12,6 @@
     <p>
         <h2> Tienes una nueva <strong>{{ $subject }}</strong> de {{ $mensaje->name }} {{ $mensaje->subname }}. </h2>
         <hr>
-        <h3>Mensaje adjunto: </h3>
-        <p> {{ $mensaje->mensaje }} </p>
-        <hr>
         <h3>Correo de contacto del solicitante:</h3>
         <p>{{ $mensaje->email }}</p>
     </p>

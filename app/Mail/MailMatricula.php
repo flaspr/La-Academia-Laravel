@@ -7,11 +7,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MensajeEnviado extends Mailable
+class MailMatricula extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "Solicitud de matrícula";
+    public $subject = "solicitud de matrícula";
     public $mensaje;
     /**
      * Create a new message instance.
@@ -30,6 +30,7 @@ class MensajeEnviado extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.matriculacionMail');
+        return $this
+            ->view('mails.matriculacionMail');
     }
 }

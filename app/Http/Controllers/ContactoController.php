@@ -19,7 +19,7 @@ class ContactoController extends Controller
     {
 
         //Aqui incluiremos un mensaje de sesion
-        $msgs = request() -> validate([
+        $msgs = (object) request()->validate([
             'name' => 'required',
             'email' => 'required|email',
             'subname' => 'required',
@@ -28,8 +28,8 @@ class ContactoController extends Controller
 
         //Enviamos el email
 
-        Mail::to('miadmeyfourproyecto@gmail.com')-> queue(new MailContacto($msgs));
+        Mail::to('miadmeyfourproyecto@gmail.com')->send(new MailContacto($msgs));
 
-        return back()->with('matriculaConfirmado','MatriculaConfirmado prueba'); //aqui que tengo que poner?
+        return back()->with('matriculaConfirmado', 'MatriculaConfirmado prueba'); //aqui que tengo que poner?
     }
 }
