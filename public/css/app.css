@@ -16301,6 +16301,12 @@ body {
   transition: height 1s ease;
 }
 
+#logo-texto {
+  transition: font-size 1s ease;
+  font-family: "Sketch Block";
+  src: url("//db.onlinewebfonts.com/t/8d5ee8e0f05d2d9f09ae9bd77e763653.eot");
+}
+
 @media (max-width: 575px) {
   #logo.logo-pequeño,
   #logo.logo-grande {
@@ -16327,6 +16333,14 @@ body {
 
   #logo.logo-grande {
     height: 75px;
+  }
+
+  .logo-texto-grande {
+    font-size: 2.5rem !important;
+  }
+
+  .logo-texto-pequeño {
+    font-size: 1.25rem !important;
   }
 
   .body-responsive main > :first-child {

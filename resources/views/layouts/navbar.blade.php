@@ -4,8 +4,8 @@
 
         <a class="navbar-brand" href="{{ url('/') }}">
             <img id="logo" class="logo-grande" src="{{ asset('images/logo.png') }}" alt="">
-            <span class="d-none d-sm-inline font-weight-lighter">
-                {{ config('app.name', 'La Academia') }}
+            <span id="logo-texto" class="d-none d-sm-inline logo-texto-grande">
+                La Academia
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
