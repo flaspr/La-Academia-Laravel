@@ -14,7 +14,8 @@
     <!-- Carta Precio -->
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
         <div class="bg-danger py-3 h-100 d-flex flex-column justify-content-center rounded-lg"
-            style="min-height: 150px">
+            style="min-height: 150px; background-image: url('/images/asignaturas/matesFoto.jpg'); 
+                background-size: cover; opacity: .5;">
             <div class="p-2">
                 <img src="{{ asset('/images/asignaturas/matematicas.svg') }}" class="img-fluid"
                     width="20%">
@@ -26,13 +27,10 @@
 
 
     <!-- Carta Precio -->
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1">
-        <div class="bg-dark py-3 h-100 d-flex flex-column justify-content-center rounded-lg" style="min-height: 150px">
-            <div class="p-2">
-                <img src="{{ asset('/images/asignaturas/quimica.svg') }}" class="img-fluid"
-                    width="20%">
-            </div>
-            <h3 class="h5 text-uppercase mb-3 text-wrap">Química</h3>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-1 ">
+        <div class="py-3 h-100 d-flex flex-column justify-content-center rounded-lg" 
+            style="min-height: 150px; background-image: url('/images/asignaturas/quimicaFoto.jpg'); background-size: cover; opacity: .5;">
+            <h3 class="h3 text-uppercase p-2 text-wrap">Química</h3>
             <!--<div>
                 <ul class="list-unstyled my-3 text-small text-left ">
                     <li class="mb-3 h5">
