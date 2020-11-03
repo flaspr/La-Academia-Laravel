@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "sketch_blockbold";
+    src: url("../sketch_block-webfont.woff2") format("woff2"),
+        url("../sketch_block-webfont.woff") format("woff");
+}
+
 #navbar {
     transition: padding 1s ease;
 }
@@ -6,9 +12,8 @@
     transition: height 1s ease;
 }
 #logo-texto {
-    transition: font-size 1s ease;
-    font-family: "Sketch Block";
-    src: url("//db.onlinewebfonts.com/t/8d5ee8e0f05d2d9f09ae9bd77e763653.eot");
+    transition: font-size 0.5s ease;
+    font-family: "sketch_blockbold";
 }
 
 @media (max-width: 575px) {
