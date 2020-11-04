@@ -31,6 +31,7 @@ class MailMatricula extends Mailable
     public function build()
     {
         return $this
+            ->from('miadmeyfour@hotmail.es', "Solicitud de " .$this->mensaje->name)
             ->view('mails.matriculacionMail');
     }
 }

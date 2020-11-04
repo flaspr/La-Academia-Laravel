@@ -33,6 +33,7 @@ class MailTrabajo extends Mailable
     public function build()
     {
         return $this
+            ->from('miadmeyfour@hotmail.es', "Solicitud de " .$this->mensaje->name)
             ->view('mails.trabajoMail')
             ->attach(
                 $this->mensaje->attached->getRealPath(),
