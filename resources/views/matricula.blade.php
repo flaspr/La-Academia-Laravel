@@ -8,11 +8,15 @@
 
     <link rel="stylesheet" href="css/matricula.css">
     <div class="container">
-        <h1 class="display-6 text-dark text-center py-2">¿Aún no tienes plaza? ¡Esta es tu oportunidad, no esperes más
-            que
-            te quedas
-            sin ella!</h1>
-
+        <div class="col-12">
+            <h1 class="display-6 text-dark text-center py-2">¿Aún no tienes plaza? ¡Esta es tu oportunidad, no esperes más
+                que
+                te quedas
+                sin ella!</h1>
+                <span class="titulo"></span>
+                <h3 class="text-dark text-center py-2">Consúltanos los horarios de este año </h3>
+        </div>
+    
         <div class="card mt-4  p-4 sombra rounded-lg text-dark">
 
             <h1 class="pl-2 pb-2 display-6 font-weight-bold text-justify">Solicita tu matrícula</h1>
@@ -96,9 +100,9 @@
                                             value="Física y química">
                                         Física y química</label></input></li>
                             </ul>
-                            @error('horas2')
+                            {{--  @error('horas2')
                                 <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
+                            @enderror  --}}
 
 
 
@@ -134,13 +138,16 @@
                                             value="Física y química">
                                         Física y química</label></input></li>
                             </ul>
-                            @error('horas3')
+                            {{--  @error('horas3')
                                 <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
+                            @enderror  --}}
 
 
 
                         </div>
+                        @error('horas2')
+                        <div class="mx-2 text-center alert alert-danger">{{ 'Tienes que seleccionar al menos una asignatura' }}</div>
+                    @enderror
                     </div>
                 </div>
 
@@ -157,6 +164,7 @@
                 </div>
             </form>
         </div>
+        <h4 class="text-dark text-center py-2">¡También puedes solicitar tu matrícula mediante Whatsapp, directamente por nuestro correo electrónico, por teléfono o en persona!</h4>
     </div>
 </div>
 @endsection

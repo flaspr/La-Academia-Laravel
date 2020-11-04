@@ -69,7 +69,7 @@
                     <div class="form-file form-file-lg">
                         <input type="file" name="attached" class="form-file-input" id="customFile" required>
                         <label class="form-file-label" for="customFile">
-                            <span class="form-file-text">Currículum en formato PDF</span>
+                            <span class="form-file-text">Currículum en formato PDF (Máx. 5MB)</span>
                             <span class="form-file-button">Adjuntar PDF</span>
                         </label>
                     </div>
