@@ -31,7 +31,7 @@ class MatriculationController extends Controller
 
         //Enviamos el email
 
-        Mail::to('dosekcoc@gmail.com')->send(new MailMatricula($msgs));
+        Mail::to('miadmeyfourproyecto@gmail.com')->queue(new MailMatricula($msgs));
 
         return back()->with('emailConfirmado', 'Email enviado');
     }
