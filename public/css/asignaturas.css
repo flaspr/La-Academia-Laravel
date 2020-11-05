@@ -1,0 +1,20 @@
+.asig {
+    min-height: 150px;
+    text-shadow: 2px 2px 2px black;
+    background-size: cover;
+    position: relative;
+}
+
+.asig:before{
+    content:' ';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.asig h3 {
+    position: relative;
+}

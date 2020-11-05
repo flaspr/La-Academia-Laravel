@@ -1,0 +1,15 @@
+.tiza {
+    font-family: sketch_blockbold;
+}
+
+.botonMatricula {
+    color: white !important;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.botonMatricula:hover {
+    color:  #de9dc7 !important;
+    background-color: white;
+}

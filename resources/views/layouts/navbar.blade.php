@@ -1,4 +1,4 @@
-<nav id="navbar" class="{{ $bg ?? "bg-dark" }} {{ $navbar ?? "navbar-dark" }}
+<nav id="navbar" class="{{ $bg ?? "bg-claro" }} {{ $navbar ?? "navbar-dark" }}
     navbar navbar-responsive navbar-fixed-botom navbar-fixed-sm-top navbar-expand-md shadow-lg py-3">
     <div class="container">
 
@@ -21,23 +21,23 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ route('matricula') }}">
-                        Solicitar matrícula
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white checkbox-Dani" data-toggle="modal" data-target="#ContactoModal">
+                <li class="nav-item mx-2">
+                    <a class="  nav-link checkbox-Dani" data-toggle="modal" data-target="#ContactoModal">
                         Contacto
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ route('trabajo') }}">
+                <li class="nav-item mx-2">
+                    <a class=" nav-link" href="{{ route('trabajo') }}">
                         Trabaja con nosotros
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://laacademia.milaulas.com/">
+                <li class="nav-item mx-2">
+                    <a class=" nav-link botonMatricula" href="{{ route('matricula') }}">
+                        Solicitar matrícula
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class=" nav-link" href="https://laacademia.milaulas.com/">
                         <i class="fas fa-graduation-cap fa-2x"></i></a>
                 </li>
             </ul>
