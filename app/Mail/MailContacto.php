@@ -29,6 +29,6 @@ class MailContacto extends Mailable
      */
     public function build()
     {
-        return $this->from('miadmeyfour@hotmail.es', "Solicitud de " .$this->mensaje->nameC)->view('mails.contactoMail');
+        return $this->from('jose@laacademiasc.es', "Solicitud de " .$this->mensaje->nameC)->view('mails.contactoMail');
     }
 }
