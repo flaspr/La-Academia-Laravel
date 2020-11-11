@@ -28,7 +28,7 @@ class ContactoController extends Controller
 
         //Enviamos el email
 
-        Mail::to('miadmeyfourproyecto@gmail.com')->queue(new MailContacto($msgs));
+        Mail::to('jose@laacademiasc.es')->queue(new MailContacto($msgs));
 
         return back()->with('emailConfirmado', 'Email enviado');
     }

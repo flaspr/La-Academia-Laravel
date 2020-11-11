@@ -23,7 +23,7 @@ class TrabajoController extends Controller
             'attached' => 'required|mimes:pdf|max:5000'
         ]);
 
-        Mail::to('miadmeyfourproyecto@gmail.com')->send(new MailTrabajo($msgs));
+        Mail::to('jose@laacademiasc.es')->send(new MailTrabajo($msgs));
 
         return back()->with('emailConfirmado', 'Email enviado');
     }
